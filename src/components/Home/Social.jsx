@@ -14,8 +14,8 @@ import wh from '../../assets/logos/wh.png'
 const Social = () => {
     return (
         <>
-            <div style={{ position: 'relative', overflow: 'hidden', minHeight: '300px', maxHeight: '400px', width: '100%' }}>
-                <Ballpit
+            <div style={{  width: '100%' }} className='hidden'>
+                {/* <Ballpit
                     count={10}
                     gravity={0.5}
                     friction={1}
@@ -25,7 +25,7 @@ const Social = () => {
                     minSize={1.5}
                     maxSize={1.5}
                     icons={[fb, ins, tel, lin, meta, lik, mail, mes, thu, wh]}
-                />
+                /> */}
             </div>
 
         </>
