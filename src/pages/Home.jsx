@@ -13,7 +13,7 @@ import  Parallax  from '@/components/Home/Parallax'
 import Test from '@/components/Home/Test'
 import Social from '@/components/Home/Social'
 import Test2 from '@/components/Home/Test2'
-import FlagBalls from '@/components/ui/FlagBalls'
+
 
 
 function Home() {
@@ -36,7 +36,7 @@ function Home() {
         <Insights/>
         <Social/>
         <Footer/>
-        {/* <FlagBalls/> */}
+     
       
       
       </div>
