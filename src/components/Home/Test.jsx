@@ -36,7 +36,7 @@ const Test = () => {
 
     return (
         <>
-            <section ref={ref} className='test  mb-20 relative h-[200vh] md:h-[230vh] '>
+            <section ref={ref} className='test  mb-20 relative h-[190vh] md:h-[250vh] '>
                 <div className='absolute inset-0  bg-linear-to-b from-black/90 via-black/10 to-black/10'></div>
                 <div className=' text-white  absolute inset-0 '>
                     <div className="text-center  py-10">
@@ -45,46 +45,24 @@ const Test = () => {
                         <h1 className=' md:text-7xl text-4xl'>Hear  it from our clients</h1>
                     </div>
                     <div className="relative  no-scrollbar">
-                        <div className='flex flex-col items-center justify-center gap-4 absolute top-0  w-full px-5 '>
+                        <div className='flex flex-col items-center justify-center gap-2 absolute top-0  w-full px-5 '>
+
                             {test.map((t, index) => {
-
-                                //const top = index * 12 
-                                //const top1 = useTransform(scrollYProgress, [0, 0.2], [`-${index * 100}%`, `0%`]);
-
                                 const start = index / test.length
                                 const end = start  / test.length
 
-                                const y = useTransform(
-                                    scrollYProgress,
-                                    [start, end],
-                                    [0.5, 1]
-                                )
-
+                                const y = useTransform( scrollYProgress, [start, end], [0.5, 1] )
                                 // const op = 1 - index * 0.12
-
-                                // const opacity = useTransform(
-                                //     scrollYProgress,
-                                //     [0, 0.5],
-                                //     [op, 1]
-                                // )
-                                const sc = (100 - (index * 4)) / 100;
-// console.log(sc)                
-                                const en = index-0.1;
-                                const scale = useTransform(
-                                    scrollYProgress,
-                                    [0, `0.${index}`],
-                                    // [0, en],
-                                    [sc, 1]
-                                )
+                                // const opacity = useTransform( scrollYProgress, [0, 0.5],    [op, 1]  )
+                                const sc = (100 - (index * 4)) / 100;              
+                                const scale = useTransform( scrollYProgress, [0, `0.${index}`], [sc, 1])
                                 
                                 return (
                                     <motion.div
                                         key={t.id}
                                         className={` md:w-100  sticky bottom-24 bg-black/10 backdrop-blur-xl rounded-xl p-4 `}
                                         style={{
-                                            // bottom: bot,
                                             y,
-                                            // opacity,
                                             scale,
                                             zIndex: test.length - index,
                                         }}
@@ -96,13 +74,10 @@ const Test = () => {
                                         </div>
                                     </motion.div>
                                 )
-
-
                             })}
                         </div>
                     </div>
                 </div>
-
             </section >
 
         </>
