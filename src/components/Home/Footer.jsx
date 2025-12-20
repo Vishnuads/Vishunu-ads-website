@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Card from '../ui/Card'
 
 const Footer = () => {
     return (
         <>
+        
             <section className='md:max-w-6xl mx-auto px-5 pt-10'>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 py-5 ">
                     <div className='mb-3'>
                         <p className='text-gray-400 mb-2'>Get in Touch</p>

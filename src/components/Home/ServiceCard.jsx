@@ -86,7 +86,7 @@ const ServiceCard = () => {
                                                 ))}
                                             </div>
                                         </div>
-                                        <div className='order-1 md:order-2 mx-auto'>
+                                        <div className='order-1 md:order-2 mx-auto mb-3 md:mb-0'>
                                             <img src={s.img} alt={s.title} className='md:h-100' />
                                         </div>
                                     </div>

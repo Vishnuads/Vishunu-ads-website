@@ -4,7 +4,18 @@ import Button from '../ui/Button'
 import B1 from '../../assets/images/blogs/1.png'
 import B2 from '../../assets/images/blogs/2.png'
 import B3 from '../../assets/images/blogs/3.png'
-import { ArrowRight } from 'lucide-react'
+// import { ArrowRight } from 'lucide-react'
+import Ballpit from '../Ballpit'
+import fb from '../../assets/logos/fb.png'
+import ins from '../../assets/logos/ins.png'
+import tel from '../../assets/logos/tele.png'
+import lin from '../../assets/logos/lin.png'
+import meta from '../../assets/logos/meta.png'
+import lik from '../../assets/logos/lik.png'
+import mail from '../../assets/logos/mail.png'
+import mes from '../../assets/logos/mes.png'
+import thu from '../../assets/logos/thu.png'
+import wh from '../../assets/logos/wh.png'
 
 const Insights = () => {
 
@@ -31,24 +42,40 @@ const Insights = () => {
 
     return (
         <>
-            <section className='md:max-w-6xl mx-auto px-5 min-h-screen'>
-                <div className="flex items-center justify-between  pb-10">
-                    <h1 className=' md:text-7xl text-4xl' >Insights</h1>
-                    <Button name="all articals" />
+            <section className='relative  px-5 pb-56 overflow-x-hidden md:min-h-screen min-h-svh'>
+                <div className="md:max-w-6xl mx-auto ">
+                    <div className="flex items-center justify-between  pb-10">
+                        <h1 className=' md:text-7xl text-4xl' >Insights</h1>
+                        <Button name="all articals" />
+                    </div>
+                    <div className="grid md:grid-cols-3  grid-cols-1 gap-6">
+                        {posts.map((p) => (
+                            <div key={p.id} className=''>
+                                <img src={p.img} alt="blog imgs" className='mb-2 object-cover h-80 w-full' />
+                                <p className='text-gray-500 text-sm'>{p.date}</p>
+                                <h1 className='font-semibold  my-3 line-clamp-1'>{p.title}</h1>
+                                <p className='text-sm flex items-center gap-1'>Read More </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
-                    {posts.map((p) => (
-                        <div key={p.id} className=''>
-                            <img src={p.img} alt="blog imgs" className='mb-2 object-cover h-80 w-full' />
-                            <p className='text-gray-500 text-sm'>{p.date}</p>
-                            <h1 className='font-semibold  my-3 line-clamp-1'>{p.title}</h1>
-                            <p className='text-sm flex items-center gap-1'>Read More </p>
-                        </div>
-                    ))}
-                </div>
-
-
+                
+                <Ballpit
+                    className="absolute inset-0 pointer-events-none z-0 "
+                    // count={50}
+                    gravity={0.5}
+                    friction={1}
+                    wallBounce={0.9}
+                    followCursor={false}
+                    size0={1}
+                    minSize={1}
+                    maxSize={1.5}
+                    icons={[fb, ins, tel, lin, meta, lik, mail, mes, thu, wh]}
+                />
+                
             </section>
+
+
 
         </>
     )

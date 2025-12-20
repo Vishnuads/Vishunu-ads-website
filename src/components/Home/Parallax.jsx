@@ -18,8 +18,8 @@ export default function Parallax() {
   // ENTRY → CENTER
   const fromLeft = useTransform(scrollYProgress, [0, 0.7], ["-310%", "0%"]);
   const fromRight = useTransform(scrollYProgress, [0, 0.7], ["310%", "0%"]);
-  const fromTop = useTransform(scrollYProgress, [0, 0.7], ["-220%", "0%"]);
-  const fromBottom = useTransform(scrollYProgress, [0, 0.7], ["220%", "0%"]);
+  const fromTop = useTransform(scrollYProgress, [0, 0.7], ["-280%", "0%"]);
+  const fromBottom = useTransform(scrollYProgress, [0, 0.7], ["250%", "0%"]);
 
   // STACK DEPTH
   const scaleFront = useTransform(scrollYProgress, [0.7, 1], [1, 1]);
@@ -65,12 +65,12 @@ export default function Parallax() {
             zIndex: zFront,
           }}
           className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2
-                     md:w-64 md:h-64 w-52 h-52 bg-amber-300 rounded-xl shadow-2xl flex items-center justify-center text-center p-4"
+                     md:w-64 md:h-64 w-52 h-52 bg-gradient-to-br from-black/10 via-white to-black/10 backdrop-blur-3xl rounded-xl shadow-2xl flex items-center justify-center text-center p-4"
         >
-          <div>
-            <h2 className=""> Experience </h2>
-              <p className="md:text-5xl text-2xl md:my-4 my-2">19 Years</p> 
-              <p className="text-xs md:text-sm">Delivering end-to-end solutions for brand creation, growth & expansion</p>
+          <div className="text-black">
+            <h2 className=" text-gray-500"> Experience </h2>
+              <p className="md:text-5xl text-2xl md:my-4 my-2 acheive-p font-semibold">19 Years</p> 
+              <p className="text-xs md:text-sm text-gray-500">Delivering end-to-end solutions for brand creation, growth & expansion</p>
           </div>
         </motion.div>
 
@@ -83,12 +83,12 @@ export default function Parallax() {
             zIndex: zMid,
           }}
           className="absolute left-1/2 top-[52%] -translate-x-1/2 -translate-y-1/2
-                     md:w-64 md:h-64 w-52 h-52 bg-red-300 rounded-xl shadow-xl flex items-center justify-center text-center p-4"
+                     md:w-64 md:h-64 w-52 h-52 bg-gradient-to-br from-black/10 via-white to-black/10 backdrop-blur-3xl rounded-xl shadow-xl flex items-center justify-center text-center p-4"
         >
           <div>
-            <h2 className=""> Clients handled</h2>
-            <p className="md:text-5xl text-2xl md:my-4 my-2">50+</p>
-            <p className="text-xs md:text-sm">Brands choose to grow with us through multiple recurring cycles</p>
+            <h2 className="text-gray-500"> Clients handled</h2>
+            <p className="md:text-5xl text-2xl font-semibold md:my-4 my-2 acheive-p">50+</p>
+            <p className="text-xs md:text-sm text-gray-500">Brands choose to grow with us through multiple recurring cycles</p>
           </div>
         </motion.div>
 
@@ -101,12 +101,12 @@ export default function Parallax() {
             zIndex: zBack,
           }}
           className="absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2
-                     md:w-64 md:h-64 w-52 h-52 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center text-center p-4"
+                     md:w-64 md:h-64 w-52 h-52 bg-gradient-to-br from-black/10 via-white to-black/10 backdrop-blur-3xl rounded-xl shadow-lg flex items-center justify-center text-center p-4"
         >
           <div>
-            <h2 className="">Campaign Success</h2>
-            <p className="md:text-5xl text-2xl md:my-4 my-2">98%</p>
-            <p className="text-xs md:text-sm">Brands choose to grow with us through multiple recurring cycles</p>
+            <h2 className="text-gray-500">Campaign Success</h2>
+            <p className="md:text-5xl text-2xl md:my-4 my-2 acheive-p font-semibold">98%</p>
+            <p className="text-xs md:text-sm text-gray-500">Brands choose to grow with us through multiple recurring cycles</p>
           </div>
         </motion.div>
 
@@ -119,12 +119,12 @@ export default function Parallax() {
             zIndex: zDeep,
           }}
           className="absolute left-1/2 top-[56%] -translate-x-1/2 -translate-y-1/2
-                     md:w-64 md:h-64 w-52 h-52 bg-green-300 rounded-xl shadow-md flex items-center justify-center text-center p-4"
+                     md:w-64 md:h-64 w-52 h-52 bg-gradient-to-br from-black/10 via-white to-black/10 backdrop-blur-3xl rounded-xl shadow-md flex items-center justify-center text-center p-4"
         >
           <div>
-            <h2 className=""> Industries Worked</h2>
-            <p className="md:text-5xl text-2xl md:my-4 my-2">10+</p>
-            <p className="text-xs md:text-sm">FMCG, Beauty, Tech, Fashion, Healthcare & more</p>
+            <h2 className="text-gray-500"> Industries Worked</h2>
+            <p className="md:text-5xl text-2xl md:my-4 my-2 acheive-p font-semibold">10+</p>
+            <p className="text-xs md:text-sm text-gray-500">FMCG, Beauty, Tech, Fashion, Healthcare & more</p>
           </div>
         </motion.div>
 

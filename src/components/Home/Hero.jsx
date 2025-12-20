@@ -1,6 +1,5 @@
 import React from 'react'
-import Banner from '../../assets/images/hero.png'
-import { ArrowUpRight } from 'lucide-react'
+import Banner from '../../assets/images/hero.webp'
 import Button2 from '../ui/Button2'
 
 const Hero = () => {
@@ -8,7 +7,7 @@ const Hero = () => {
         <>
             <section className='min-h-screen relative w-full'>
                 
-                    <img src={Banner} alt="Hero Banner" className='absolute inset-0 pt-15 h-screen object-cover w-full z-0' />
+                    <img src={Banner} alt="Hero Banner" className='absolute inset-0 pt-24 h-screen object-cover w-full z-0' />
                     <div className='max-w-6xl mx-auto  z-10'>
                         <p className='absolute top-40 left-10 text-white text-4xl font-extralight'>Vishnu Ads & Ventures®</p>
                     </div>

@@ -46,7 +46,7 @@ const Process = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-20 px-5'>
                     {process.map((p) => (
-                        <div key={p.id} className='border bg-white'>
+                        <div key={p.id} className='border bg-white hover:shadow-xl transition-all duration-400'>
                             <img src={p.img} alt={p.title} />
                             <div className=" px-5 py-4 ">
                                 <p className='border rounded-full px-4 py-2 w-fit mb-3'>{p.id}</p>

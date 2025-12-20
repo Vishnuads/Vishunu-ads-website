@@ -251,10 +251,10 @@ function S(e) {
         document.body.addEventListener('pointerleave', L);
         document.body.addEventListener('click', C);
 
-        document.body.addEventListener('touchstart', TouchStart, { passive: false });
-        document.body.addEventListener('touchmove', TouchMove, { passive: false });
-        document.body.addEventListener('touchend', TouchEnd, { passive: false });
-        document.body.addEventListener('touchcancel', TouchEnd, { passive: false });
+        e.addEventListener('touchstart', TouchStart, { passive: false });
+        e.addEventListener('touchmove', TouchMove, { passive: false });
+        e.addEventListener('touchend', TouchEnd, { passive: false });
+        e.addEventListener('touchcancel', TouchEnd, { passive: false });
 
         R = true;
       }
@@ -344,7 +344,10 @@ function TouchStart(e) {
 
 function TouchMove(e) {
   if (e.touches.length > 0) {
-    e.preventDefault();
+
+    if (target.tagName === 'CANVAS') {
+      e.preventDefault();
+    }
     A.x = e.touches[0].clientX;
     A.y = e.touches[0].clientY;
 
@@ -454,7 +457,9 @@ class W {
       const base = 3 * idx;
       I.fromArray(s, base);
       B.fromArray(o, base);
-      const radius = n[idx];
+
+      const radius = n[idx] * 0.75;
+
       for (let jdx = idx + 1; jdx < t.count; jdx++) {
         const otherBase = 3 * jdx;
         O.fromArray(s, otherBase);
@@ -468,8 +473,8 @@ class W {
           j.copy(_)
             .normalize()
             .multiplyScalar(0.5 * overlap);
-          H.copy(j).multiplyScalar(Math.max(B.length(), 1));
-          T.copy(j).multiplyScalar(Math.max(N.length(), 1));
+          H.copy(j).multiplyScalar(Math.max(B.length(), 0.5));
+          T.copy(j).multiplyScalar(Math.max(N.length(), 0.5));
           I.sub(j);
           B.sub(H);
           I.toArray(s, base);
@@ -546,8 +551,12 @@ class Y extends c {
   }
 }
 
+const isMobile = window.innerWidth < 768;
+const count = isMobile ? 50 : 20;
+
 const X = {
-  count: 50,
+
+  count,
   colors: '#fffaaa',
   ambientColor: 16777215,
   ambientIntensity: 1,
@@ -561,7 +570,7 @@ const X = {
   minSize: 2,
   maxSize: 2,
   size0: 2,
-  gravity: 0.5,
+  gravity: 0.9,
   friction: 0.9975,
   wallBounce: 0.95,
   maxVelocity: 0.15,
@@ -569,7 +578,7 @@ const X = {
   maxY: 5,
   maxZ: 2,
   controlSphere0: false,
-  followCursor: true
+  followCursor: false
 };
 
 const U = new m();
@@ -646,7 +655,7 @@ function createBallpit(e, t = {}) {
   const r = new a();
   let c = false;
 
-  e.style.touchAction = 'none';
+  e.style.touchAction = 'pan-y';
   e.style.userSelect = 'none';
   e.style.webkitUserSelect = 'none';
 
@@ -675,10 +684,58 @@ function createBallpit(e, t = {}) {
     if (!c) s.update(e);
   };
 
+  // i.onAfterResize = e => {
+  //   s.config.maxX = e.wWidth / 2;
+  //   s.config.maxY = e.wHeight / 2;
+
+  //   const isMobile = window.innerWidth < 768;
+
+  //   const size = isMobile ? 0.4 : 1.3;
+
+  //   s.config.size0 = size;
+  //   s.config.minSize = size;
+  //   s.config.maxSize = size;
+
+  //   s.physics.setSizes();
+
+  // };
+
   i.onAfterResize = e => {
     s.config.maxX = e.wWidth / 2;
     s.config.maxY = e.wHeight / 2;
+
+    const isMobile = window.innerWidth < 768;
+    const size = isMobile ? 0.4 : 1.3;
+
+    s.config.size0 = size;
+    s.config.minSize = size;
+    s.config.maxSize = size;
+    s.physics.setSizes();
+
+    const { positionData, sizeData, config } = s.physics;
+
+    for (let idx = 0; idx < config.count; idx++) {
+      const base = 3 * idx;
+      const radius = sizeData[idx] * 0.75;
+
+      let x = positionData[base];
+      let y = positionData[base + 1];
+      let z = positionData[base + 2];
+
+      x = Math.max(-config.maxX + radius, Math.min(config.maxX - radius, x));
+      y = Math.max(-config.maxY + radius, Math.min(config.maxY - radius, y));
+      const maxBoundary = Math.max(config.maxZ, config.maxSize);
+      z = Math.max(-maxBoundary + radius, Math.min(maxBoundary - radius, z));
+
+      positionData[base] = x;
+      positionData[base + 1] = y;
+      positionData[base + 2] = z;
+    }
   };
+
+
+
+
   return {
     three: i,
     get spheres() {
@@ -707,7 +764,21 @@ const Ballpit = ({ className = '', followCursor = true, ...props }) => {
 
     spheresInstanceRef.current = createBallpit(canvas, { followCursor, ...props });
 
+    setTimeout(() => {
+      instance.three.resize();
+    }, 300);
+
+    const handleResize = () => {
+      spheresInstanceRef.current?.three.resize();
+    };
+
+    window.addEventListener('orientationchange', handleResize);
+    window.addEventListener('resize', handleResize);
+
+
     return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
       if (spheresInstanceRef.current) {
         spheresInstanceRef.current.dispose();
       }

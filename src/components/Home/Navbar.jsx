@@ -13,6 +13,7 @@ function Navbar() {
         { id: 3, name: "Services", link: "/" },
         { id: 4, name: "About", link: "/" },
         { id: 5, name: "Blog", link: "/" },
+
     ]
 
     const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className='z-50 fixed right-0 w-full bg-[#fffefa]'>
+            <nav className='z-50 fixed right-0 w-full bg-transparent backdrop-blur-xl'>
                 {/* Desktop */}
                 <div className="h-fit  w-full p-3 py-4 hidden lg:block">
                     <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -39,6 +40,7 @@ function Navbar() {
                                     </Link>
                                 </div>
                             ))}
+                            {/* <button className='bg-gray-300 rounded-md px-3 py-2 '><FlipText name="AI Film"  /></button> */}
                         </div>
                         <div>
                             <Button name="Contact" />

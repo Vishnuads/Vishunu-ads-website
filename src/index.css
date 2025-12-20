@@ -8,10 +8,26 @@
   src: url("./fonts/Switzer_Complete/Fonts/TTF/Switzer-Variable.ttf")
     format("truetype");
 }
+
+@font-face {
+  font-family: "Anton";
+  src: url("./fonts/anton-sc/AntonSC-Regular.ttf") format("truetype");
+}
+
 * {
   font-family: "Switzer" !important;
   /* font-weight: 300; */
 }
+
+/* .acheive-p {
+  font-family: "Anton", sans-serif !important;
+  font-style: normal;
+} */
+
+/* html, body {
+  height: 100%;
+  overflow: hidden;
+} */
 
 @keyframes arrow-right {
   from {
@@ -39,7 +55,7 @@
   animation: arrow-left var(--arrow-speed, 10s) linear infinite;
 }
 .test {
-  background-image: url("../src/assets/images/test.jpg");
+  background-image: url("../src/assets/images/test.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -47,12 +63,12 @@
 }
 /* Hide scrollbar but keep scroll */
 .no-scrollbar {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 /* Ez end */

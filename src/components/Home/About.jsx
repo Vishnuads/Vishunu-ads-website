@@ -5,7 +5,7 @@ import { Dot } from 'lucide-react'
 const About = () => {
     return (
         <>
-            <section className='relative py-20 max-w-6xl mx-auto min-h-screen overflow-hidden'>
+            <section className='relative pt-20 max-w-6xl mx-auto  overflow-hidden'>
                 <div className="text-center  pb-10">
                     <p className='tracking-widest font-extralight py-4 flex items-center uppercase justify-center'> about us <Dot /></p>
                     <h1 className=' md:text-6xl text-4xl'>Who We Are?</h1>

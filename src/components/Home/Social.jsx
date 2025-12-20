@@ -14,9 +14,9 @@ import wh from '../../assets/logos/wh.png'
 const Social = () => {
     return (
         <>
-            <div style={{  width: '100%' }} className='hidden'>
+            <div style={{  width: '100%' }} className=' overflow-hidden'>
                 {/* <Ballpit
-                    count={10}
+                    count={15}
                     gravity={0.5}
                     friction={1}
                     wallBounce={1}

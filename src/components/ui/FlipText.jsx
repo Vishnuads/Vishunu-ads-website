@@ -9,8 +9,9 @@ const FlipText = ({ name }) => {
     <motion.div
       initial="initial"
       whileHover="hovered"
-      className="relative block overflow-hidden whitespace-nowrap text-black uppercase "
+      className=" block overflow-hidden whitespace-nowrap text-black uppercase "
       style={{
+        position: "relative",
         lineHeight: 1,
       }}
     >

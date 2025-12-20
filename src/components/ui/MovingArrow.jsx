@@ -56,7 +56,7 @@ const MovingArrowCTA = ({ label = 'Get in touch', onClick }) => {
       <Button name={label}/></div>
 
       <div className="relative">
-        <div className="absolute inset-0 bg-linear-to-r from-[#fffefa] via-transparent to-[#fffefa] z-10 "></div>
+        <div className="md:absolute inset-0 bg-linear-to-r from-[#fffefa] via-transparent to-[#fffefa] z-10 "></div>
         <ArrowTrack direction="left" />
       </div>
     </div>

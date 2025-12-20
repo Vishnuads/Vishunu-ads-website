@@ -23,7 +23,7 @@ const Button = ({ name }) => {
           </span>
         </span>
 
-        <span className="bg-black relative rounded-full p-1 text-white flex items-center justify-center">
+        <span className="bg-black relative rounded-full p-1 text-white flex items-center justify-center overflow-hidden">
           <ArrowUpRight className="transform transition-transform duration-500 group-hover:-translate-y-6 group-hover:translate-x-4 translate-y-0 translate-x-0" />
           <ArrowUpRight className="transform absolute inset-0 transition-transform duration-500 translate-y-6 -translate-x-4 group-hover:translate-y-1 group-hover:translate-x-1" />
         </span>
