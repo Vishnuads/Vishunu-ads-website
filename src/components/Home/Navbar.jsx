@@ -28,7 +28,7 @@ function Navbar() {
         <>
             <nav className='z-50 fixed right-0 w-full bg-transparent backdrop-blur-xl'>
                 {/* Desktop */}
-                <div className="h-fit  w-full p-3 py-4 hidden lg:block">
+                <div className="h-fit  w-full p-3 py-4 hidden md:block">
                     <div className="max-w-6xl mx-auto flex items-center justify-between">
                         <Link to={"/"}>
                             <img src={Logo} alt="VA Logo" className='w-auto md:h-14 h-8 ' />
@@ -55,20 +55,43 @@ function Navbar() {
                 </div>
 
                 {/* Mobile */}
-                <div className="relative w-full h-fit p-3 py-4 lg:hidden ">
+                <div className="relative w-full h-fit p-3 py-5 bg-white md:hidden ">
                     {/* Top Bar */}
-                    <div className="flex items-center justify-between px-4">
-                        <Link to="/" target='_blank'>
+                    {/* <div className="flex items-center justify-between px-4">
+                        <Link to="/" target='_blank' className='w-full'>
                             <img
                                 src={Logo}
                                 alt="VA Logo"
-                                className={`h-8 transition-all duration-500 ease-in-out ${isOpen ? 'translate-y-80 translate-x-1/2' : 'translate-y-0'
+                                className={`h-8 transition-all  duration-500 ease-in-out ${isOpen ? 'translate-y-80 translate-x-32 ' : 'translate-y-0'
                                     }`}
                             />
                         </Link>
 
                         <Hamburger toggle={toggleMenu} isOn={isOpen} />
+                    </div> */}
+                    <div className="relative flex items-center px-4 h-16">
+
+                        {/* Centered Logo */}
+                        <Link
+                            to="/"
+                            target="_blank"
+                            className="absolute left-1/2 -translate-x-1/2"
+                        >
+                            <img
+                                src={Logo}
+                                alt="VA Logo"
+                                className={`h-8 transition-all  duration-500 ease-in-out ${isOpen ? 'translate-y-84' : 'translate-y-0'
+                                    }`}
+                            />
+                        </Link>
+
+                        {/* Hamburger aligned right */}
+                        <div className="ml-auto">
+                            <Hamburger toggle={toggleMenu} isOn={isOpen} />
+                        </div>
+
                     </div>
+
 
                     {/* Animated Menu */}
                     <div
