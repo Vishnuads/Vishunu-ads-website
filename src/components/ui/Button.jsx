@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import React from 'react'
 
 
-const Button = ({ name }) => {
+const Button = ({ name, className }) => {
   return (
     <>
       {/* <button className='border px-3 py-2 flex w-fit items-center justify-center gap-2 uppercase rounded-full'>
@@ -10,7 +10,7 @@ const Button = ({ name }) => {
         <span className='bg-black rounded-full p-1 text-white'> <ArrowUpRight /> </span>
       </button> */}
       <button
-        className="group border px-3 py-2 flex w-fit items-center justify-center gap-2 uppercase rounded-full overflow-hidden"
+        className={`group border px-3 py-2 flex w-fit items-center justify-center gap-2 uppercase rounded-full overflow-hidden ${className}`}
       >
         <span className="relative flex flex-col justify-center overflow-hidden">
           {/* Top text (initially visible) */}

@@ -4,7 +4,6 @@ import Button from '../ui/Button'
 import B1 from '../../assets/images/blogs/1.png'
 import B2 from '../../assets/images/blogs/2.png'
 import B3 from '../../assets/images/blogs/3.png'
-// import { ArrowRight } from 'lucide-react'
 import Ballpit from '../Ballpit'
 import fb from '../../assets/logos/fb.png'
 import ins from '../../assets/logos/ins.png'
@@ -16,6 +15,8 @@ import mail from '../../assets/logos/mail.png'
 import mes from '../../assets/logos/mes.png'
 import thu from '../../assets/logos/thu.png'
 import wh from '../../assets/logos/wh.png'
+import yt from '../../assets/logos/ytw.png'
+import { Link } from 'react-router-dom'
 
 const Insights = () => {
 
@@ -54,7 +55,8 @@ const Insights = () => {
                                 <img src={p.img} alt="blog imgs" className='mb-2 object-cover h-80 w-full' />
                                 <p className='text-gray-500 text-sm'>{p.date}</p>
                                 <h1 className='font-semibold  my-3 line-clamp-1'>{p.title}</h1>
-                                <p className='text-sm flex items-center gap-1'>Read More </p>
+                                <Link to={`/blog/${p.title.replace(/\s+/g, "-").toLowerCase()}`}>
+                                <p className='text-sm flex items-center gap-1'>Read More </p></Link>
                             </div>
                         ))}
                     </div>
@@ -66,11 +68,11 @@ const Insights = () => {
                     gravity={0.5}
                     friction={1}
                     wallBounce={0.9}
-                    followCursor={false}
+                    // followCursor={false}
                     size0={1}
                     minSize={1}
                     maxSize={1.5}
-                    icons={[fb, ins, tel, lin, meta, lik, mail, mes, thu, wh]}
+                    icons={[fb, ins, tel, yt, lin, meta, lik, mail, mes, thu, wh]}
                 />
                 
             </section>

@@ -36,7 +36,7 @@ const Test = () => {
 
     return (
         <>
-            <section ref={ref} className='test  mb-20 relative h-[190vh] md:h-[250vh] '>
+            <section ref={ref} className='test  mb-20 relative min-h-[240vh] md:min-h-[250vh] lg:min-h-[260vh] '>
                 <div className='absolute inset-0  bg-linear-to-b from-black/90 via-black/10 to-black/10'></div>
                 <div className=' text-white  absolute inset-0 '>
                     <div className="text-center  py-10">
@@ -46,11 +46,9 @@ const Test = () => {
                     </div>
                     <div className="relative  no-scrollbar">
                         <div className='flex flex-col items-center justify-center gap-2 absolute top-0  w-full px-5 '>
-
                             {test.map((t, index) => {
                                 const start = index / test.length
                                 const end = start  / test.length
-
                                 const y = useTransform( scrollYProgress, [start, end], [0.5, 1] )
                                 // const op = 1 - index * 0.12
                                 // const opacity = useTransform( scrollYProgress, [0, 0.5],    [op, 1]  )
@@ -65,9 +63,8 @@ const Test = () => {
                                             y,
                                             scale,
                                             zIndex: test.length - index,
-                                        }}
-                                    >
-                                        <p className="text-sm font-light">{t.review}</p>
+                                        }} >
+                                        <p className="text-md font-light">{t.review}</p>
                                         <div className="flex items-center gap-3 pt-3">
                                             <div className="bg-green-300 rounded-full px-3 py-2 text-red-950">{t.profile}</div>
                                             <p>{t.name}</p>

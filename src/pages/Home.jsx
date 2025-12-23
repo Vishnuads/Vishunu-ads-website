@@ -8,37 +8,26 @@ import Benefits from '@/components/Home/Benefits'
 import Process from '@/components/Home/Process'
 import Insights from '@/components/Home/Insights'
 import Footer from '@/components/Home/Footer'
-import Testimonials from '@/components/Home/Testimonials'
-import  Parallax  from '@/components/Home/Parallax'
+import Parallax from '@/components/Home/Parallax'
 import Test from '@/components/Home/Test'
 import Social from '@/components/Home/Social'
-import Test2 from '@/components/Home/Test2'
-
-
 
 function Home() {
   return (
     <>
       <div className="bg-[#fffefa]">
-    {/* <ParallaxHero/> */}
-  
         <Navbar />
         <Hero />
-        <Parallax/>
+        <Parallax />
         <Works />
-        <About/>
-        <Service/>
-        <Benefits/>
-        <Process/>
-        {/* <Testimonials/> */}
-         <Test/>
-         {/* <Test2/> */}
-        <Insights/>
-        <Social/>
-        <Footer/>
-     
-      
-      
+        <About />
+        <Service />
+        <Benefits />
+        <Process />
+        <Test />
+        <Insights />
+        <Social />
+        <Footer />
       </div>
 
 

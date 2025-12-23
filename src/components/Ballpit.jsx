@@ -552,7 +552,7 @@ class Y extends c {
 }
 
 const isMobile = window.innerWidth < 768;
-const count = isMobile ? 50 : 20;
+const count = isMobile ? 40 : 20;
 
 const X = {
 
@@ -578,7 +578,7 @@ const X = {
   maxY: 5,
   maxZ: 2,
   controlSphere0: false,
-  followCursor: false
+  followCursor: true
 };
 
 const U = new m();
@@ -754,7 +754,7 @@ function createBallpit(e, t = {}) {
   };
 }
 
-const Ballpit = ({ className = '', followCursor = true, ...props }) => {
+const Ballpit = ({ className = '', followCursor = false, ...props }) => {
   const canvasRef = useRef(null);
   const spheresInstanceRef = useRef(null);
 
@@ -764,9 +764,9 @@ const Ballpit = ({ className = '', followCursor = true, ...props }) => {
 
     spheresInstanceRef.current = createBallpit(canvas, { followCursor, ...props });
 
-    setTimeout(() => {
-      instance.three.resize();
-    }, 300);
+    // setTimeout(() => {
+    //   i.three.resize();
+    // }, 300);
 
     const handleResize = () => {
       spheresInstanceRef.current?.three.resize();

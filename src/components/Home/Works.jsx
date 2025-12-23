@@ -6,6 +6,7 @@ import W2 from '../../assets/images/w2.png'
 import W3 from '../../assets/images/w3.png'
 import W4 from '../../assets/images/w4.png'
 import MovingArrow from '../ui/MovingArrow'
+import { motion } from 'framer-motion'
 
 
 const Works = () => {
@@ -18,10 +19,31 @@ const Works = () => {
     ]
     return (
         <>
-            <section className='relative pt-20 max-w-6xl mx-auto min-h-screen overflow-hidden'>
+            <motion.section
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                    duration: 0.3,
+                    delay: 0.3
+                }}
+                className='relative pt-20 max-w-6xl mx-auto min-h-screen overflow-hidden'>
                 <div className="text-center border-b pb-6">
-                    <p className='tracking-widest font-extralight py-4 flex items-center justify-center'><Dot /> SHOWCASE</p>
-                    <h1 className=' text-6xl'>Our Works</h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.3,
+                            delay: 0.3
+                        }}
+                        className='tracking-widest font-extralight py-4 flex items-center justify-center'><Dot /> SHOWCASE</motion.p>
+                    <motion.h1
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.3,
+                            delay: 0.3
+                        }}
+                        className=' text-6xl'>Our Works</motion.h1>
                 </div>
                 <div className="grid md:grid-cols-2 px-5 gap-6 my-10">
                     {works.map((work, idx) => (
@@ -33,12 +55,12 @@ const Works = () => {
                         </div>
                     ))}
                 </div>
-                  
-            </section>
+
+            </motion.section>
             <div className="flex justify-center   overflow-hidden">
                 <MovingArrow label="view all work" />
             </div>
-          
+
 
         </>
     )

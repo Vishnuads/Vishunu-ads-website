@@ -41,7 +41,7 @@ const Footer = () => {
                                     <p className='text-gray-400 mb-2'>Menu</p>
                                     <p> <Link> Home</Link> </p>
                                     <p><Link> Projects</Link></p>
-                                    <p><Link> About</Link></p>
+                                    <p><Link to="/about"> About</Link></p>
                                     <p><Link> Blog</Link></p>
                                     {/* <p><Link> Contact</Link></p> */}
                                 </div>

@@ -6,7 +6,8 @@ import S3 from '../../assets/images/services/3.png'
 import S4 from '../../assets/images/services/4.png'
 import S5 from '../../assets/images/services/5.png'
 import S6 from '../../assets/images/services/6.png'
-import { Dot } from 'lucide-react'
+import { Link } from 'react-router-dom'
+
 
 const ServiceCard = () => {
 
@@ -69,23 +70,26 @@ const ServiceCard = () => {
                             >
                                 <div className=" border border-stone-200 bg-white p-8">
                                     <div className="grid grid-cols-1 md:grid-cols-2 ">
-                                        <div className="order-2 md:order-1 flex flex-col space-y-4 justify-between ">
-                                            <p className='border rounded-full px-4 py-2 w-fit'>{s.id}</p>
-                                            <div>
-                                                <h2 className=" md:text-5xl text-xl flex items-center mb-3 font-extralight tracking-tight text-stone-900">
-                                                    <span className='w-2 h-2 mx-2 bg-black rounded-full'></span> {s.title}
-                                                </h2>
-                                                <h3 className="text-sm text-gray-400 font-light w-[95%]">
-                                                    {s.description}
-                                                </h3></div>
-                                            <div className='flex flex-wrap items-center gap-2 w-full'>
-                                                {s.tags.map((t, idx) => (
-                                                    <span
-                                                        key={idx}
-                                                        className='border px-3 py-1 text-sm rounded-2xl whitespace-nowrap '>{t}</span>
-                                                ))}
+                                        <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}>
+                                            <div className="order-2 md:order-1 flex flex-col space-y-4 justify-between ">
+                                                <p className='border rounded-full px-4 py-2 w-fit'>{s.id}</p>
+                                                <div>
+                                                    <h2 className=" md:text-5xl text-xl flex items-center mb-3 font-extralight tracking-tight text-stone-900">
+                                                        <span className='w-2 h-2 mx-2 bg-black rounded-full'></span> {s.title}
+                                                    </h2>
+                                                    <h3 className="text-sm text-gray-400 font-light w-[95%]">
+                                                        {s.description}
+                                                    </h3>
+                                                </div>
+                                                <div className='flex flex-wrap items-center gap-2 w-full'>
+                                                    {s.tags.map((t, idx) => (
+                                                        <span
+                                                            key={idx}
+                                                            className='border px-3 py-1 text-sm rounded-2xl whitespace-nowrap '>{t}</span>
+                                                    ))}
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <div className='order-1 md:order-2 mx-auto mb-3 md:mb-0'>
                                             <img src={s.img} alt={s.title} className='md:h-100' />
                                         </div>
@@ -94,7 +98,7 @@ const ServiceCard = () => {
                             </CardSticky>
                         ))}
 
-                        <div className="h-96"></div>
+                        <div className="h-80"></div>
                     </ContainerScroll>
 
                 </div>

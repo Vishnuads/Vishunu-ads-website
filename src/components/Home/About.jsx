@@ -1,14 +1,36 @@
 import React from 'react'
 import { Dot } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 
 const About = () => {
     return (
         <>
-            <section className='relative pt-20 max-w-6xl mx-auto  overflow-hidden'>
+            <motion.section
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                    duration: 0.5,
+                    delay: 0.5
+                }}
+                className='relative pt-20 max-w-6xl mx-auto  overflow-hidden'>
                 <div className="text-center  pb-10">
-                    <p className='tracking-widest font-extralight py-4 flex items-center uppercase justify-center'> about us <Dot /></p>
-                    <h1 className=' md:text-6xl text-4xl'>Who We Are?</h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.3,
+                            delay: 0.3
+                        }}
+                        className='tracking-widest font-extralight py-4 flex items-center uppercase justify-center'> About us <Dot /></motion.p>
+                    <motion.h1
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.3,
+                            delay: 0.3
+                        }}
+                        className=' md:text-6xl text-4xl'>Who We Are?</motion.h1>
                 </div>
 
                 <p className='md:text-3xl text-xl font-extralight md:w-[85%] mx-auto tracking-wide md:leading-10 px-5'>At Vishnu Ads, we don’t just create ads — we build experiences that
@@ -16,7 +38,7 @@ const About = () => {
                     specialize in transforming ideas into memorable campaigns. Whether
                     you're a startup or an established brand, our tailor-made solutions are
                     designed to help you succeed in an ever-evolving marketplace.</p>
-            </section>
+            </motion.section>
 
         </>
     )

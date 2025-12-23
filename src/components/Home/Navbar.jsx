@@ -9,9 +9,9 @@ function Navbar() {
 
     const navLinks = [
         { id: 1, name: "Home", link: "/" },
-        { id: 2, name: "Projects", link: "/" },
+        { id: 2, name: "Projects", link: "/projects" },
         { id: 3, name: "Services", link: "/" },
-        { id: 4, name: "About", link: "/" },
+        { id: 4, name: "About", link: "/about" },
         { id: 5, name: "Blog", link: "/" },
 
     ]
@@ -36,14 +36,16 @@ function Navbar() {
                             {navLinks.map((nav) => (
                                 <div key={nav.id}>
                                     <Link to={nav.link}>
-                                    <FlipText name={nav.name} />
+                                        <FlipText name={nav.name} />
                                     </Link>
                                 </div>
                             ))}
                             {/* <button className='bg-gray-300 rounded-md px-3 py-2 '><FlipText name="AI Film"  /></button> */}
                         </div>
                         <div>
-                            <Button name="Contact" />
+                            <Link to="/contact">
+                                <Button name="Contact" />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -56,7 +58,7 @@ function Navbar() {
                             <img
                                 src={Logo}
                                 alt="VA Logo"
-                                className={`h-8 transition-all duration-500 ease-in-out ${isOpen ? 'translate-y-68 translate-x-30' : 'translate-y-0'
+                                className={`h-8 transition-all duration-500 ease-in-out ${isOpen ? 'translate-y-68 translate-x-28' : 'translate-y-0'
                                     }`}
                             />
                         </Link>
@@ -87,7 +89,7 @@ function Navbar() {
                                     }`}
                                 style={{ transitionDelay: '500ms' }}
                             >
-                                Contact
+                             <Link to="/contact">  Contact </Link> 
                             </li>
                         </ul>
                     </div>
