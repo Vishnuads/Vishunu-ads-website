@@ -43,7 +43,7 @@ function Navbar() {
                                 </div>
                             ))}
                             <button className='bg-gray-300  px-3 py-2 '>
-                                <Link to="https://www.aiadfilmmakers.com/">  <FlipText name="AI Film" /></Link>
+                                <Link to="https://www.aiadfilmmakers.com/" target='_blank'>  <FlipText name="AI Film" /></Link>
                             </button>
                         </div>
                         <div>
