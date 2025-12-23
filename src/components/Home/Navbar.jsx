@@ -4,15 +4,17 @@ import Logo from '../../assets/images/vishnu_ads_logo.png'
 import Button from '../ui/Button'
 import Hamburger from '../ui/Hamburger'
 import FlipText from '../ui/FlipText'
+import { HashLink } from 'react-router-hash-link';
+
 
 function Navbar() {
 
     const navLinks = [
         { id: 1, name: "Home", link: "/" },
         { id: 2, name: "Projects", link: "/projects" },
-        { id: 3, name: "Services", link: "/" },
+        { id: 3, name: "Services", link: "/#service" },
         { id: 4, name: "About", link: "/about" },
-        { id: 5, name: "Blog", link: "/" },
+        { id: 5, name: "Blog", link: "/#blog" },
 
     ]
 
@@ -35,12 +37,14 @@ function Navbar() {
                         <div className="flex items-center justify-between gap-8">
                             {navLinks.map((nav) => (
                                 <div key={nav.id}>
-                                    <Link to={nav.link}>
+                                    <HashLink smooth to={nav.link}>
                                         <FlipText name={nav.name} />
-                                    </Link>
+                                    </HashLink>
                                 </div>
                             ))}
-                            {/* <button className='bg-gray-300 rounded-md px-3 py-2 '><FlipText name="AI Film"  /></button> */}
+                            <button className='bg-gray-300  px-3 py-2 '>
+                                <Link to="https://www.aiadfilmmakers.com/">  <FlipText name="AI Film" /></Link>
+                            </button>
                         </div>
                         <div>
                             <Link to="/contact">
@@ -54,11 +58,11 @@ function Navbar() {
                 <div className="relative w-full h-fit p-3 py-4 lg:hidden ">
                     {/* Top Bar */}
                     <div className="flex items-center justify-between px-4">
-                        <Link to="/">
+                        <Link to="/" target='_blank'>
                             <img
                                 src={Logo}
                                 alt="VA Logo"
-                                className={`h-8 transition-all duration-500 ease-in-out ${isOpen ? 'translate-y-68 translate-x-28' : 'translate-y-0'
+                                className={`h-8 transition-all duration-500 ease-in-out ${isOpen ? 'translate-y-80 translate-x-1/2' : 'translate-y-0'
                                     }`}
                             />
                         </Link>
@@ -89,8 +93,11 @@ function Navbar() {
                                     }`}
                                 style={{ transitionDelay: '500ms' }}
                             >
-                             <Link to="/contact">  Contact </Link> 
+                                <Link to="/contact">  Contact </Link>
                             </li>
+                            <button className='bg-gray-300  px-3 py-2 '>
+                                <Link to="https://www.aiadfilmmakers.com/" target='_blank'>  <FlipText name="AI Film" /></Link>
+                            </button>
                         </ul>
                     </div>
                 </div>

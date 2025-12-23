@@ -43,7 +43,7 @@ const Insights = () => {
 
     return (
         <>
-            <section className='relative  px-5 pb-56 overflow-x-hidden md:min-h-screen min-h-svh'>
+            <section className='relative  px-5 pb-56  overflow-x-hidden md:min-h-screen min-h-svh' id="blog">
                 <div className="md:max-w-6xl mx-auto ">
                     <div className="flex items-center justify-between  pb-10">
                         <h1 className=' md:text-7xl text-4xl' >Insights</h1>

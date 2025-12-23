@@ -39,10 +39,10 @@ const Footer = () => {
                             <div className='md:flex justify-center mb-3 '>
                                 <div className='space-y-3'>
                                     <p className='text-gray-400 mb-2'>Menu</p>
-                                    <p> <Link> Home</Link> </p>
-                                    <p><Link> Projects</Link></p>
+                                    <p> <Link to="/"> Home</Link> </p>
+                                    <p><Link to="/projects"> Projects</Link></p>
                                     <p><Link to="/about"> About</Link></p>
-                                    <p><Link> Blog</Link></p>
+                                    <p><Link to="/"> Blog</Link></p>
                                     {/* <p><Link> Contact</Link></p> */}
                                 </div>
                             </div>

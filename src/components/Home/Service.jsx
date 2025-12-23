@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const Service = () => {
     return (
         <>
-            <section className='relative py-20 max-w-6xl mx-auto pb-10 overflow-hidden'>
+            <section className='relative py-20 max-w-6xl mx-auto pb-10 overflow-hidden' id="service">
                 <div className="text-center  pb-10 border-b">
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}

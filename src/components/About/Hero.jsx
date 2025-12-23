@@ -9,7 +9,7 @@ const Hero = () => {
             <section className='min-h-screen pt-20'>
                 <div className="md:max-w-6xl mx-auto px-5">
                     <div className="flex items-center justify-between py-10 border-b">
-                        <h1 className='lg:text-6xl md:text-5xl sm:text-3xl text-2xl font-semibold'>About </h1>
+                        <h1 className='lg:text-6xl md:text-5xl text-3xl font-semibold'>About </h1>
                         <div className='border rounded-full'>
                             <ArrowDownRight size={44} className='bg-black text-white p-2 m-2 rounded-full' />
                         </div>

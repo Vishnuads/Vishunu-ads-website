@@ -70,9 +70,10 @@ const ServiceCard = () => {
                             >
                                 <div className=" border border-stone-200 bg-white p-8">
                                     <div className="grid grid-cols-1 md:grid-cols-2 ">
-                                        <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}>
+                                        {/* <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}> */}
                                             <div className="order-2 md:order-1 flex flex-col space-y-4 justify-between ">
                                                 <p className='border rounded-full px-4 py-2 w-fit'>{s.id}</p>
+                                                <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}>
                                                 <div>
                                                     <h2 className=" md:text-5xl text-xl flex items-center mb-3 font-extralight tracking-tight text-stone-900">
                                                         <span className='w-2 h-2 mx-2 bg-black rounded-full'></span> {s.title}
@@ -81,6 +82,7 @@ const ServiceCard = () => {
                                                         {s.description}
                                                     </h3>
                                                 </div>
+                                                </Link>
                                                 <div className='flex flex-wrap items-center gap-2 w-full'>
                                                     {s.tags.map((t, idx) => (
                                                         <span
@@ -89,7 +91,7 @@ const ServiceCard = () => {
                                                     ))}
                                                 </div>
                                             </div>
-                                        </Link>
+                                        {/* </Link> */}
                                         <div className='order-1 md:order-2 mx-auto mb-3 md:mb-0'>
                                             <img src={s.img} alt={s.title} className='md:h-100' />
                                         </div>
