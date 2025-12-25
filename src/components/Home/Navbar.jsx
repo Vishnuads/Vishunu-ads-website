@@ -15,6 +15,7 @@ function Navbar() {
         { id: 3, name: "Services", link: "/#service" },
         { id: 4, name: "About", link: "/about" },
         { id: 5, name: "Blog", link: "/#blog" },
+        { id: 6, name: "AI Film", link: "/aiad-film" },
 
     ]
 
@@ -26,7 +27,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className='z-50 fixed right-0 w-full bg-transparent backdrop-blur-xl'>
+            <nav className='z-50 fixed right-0  w-full bg-transparent backdrop-blur-xl'>
                 {/* Desktop */}
                 <div className="h-fit  w-full p-3 py-4 hidden lg:block">
                     <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -42,9 +43,6 @@ function Navbar() {
                                     </HashLink>
                                 </div>
                             ))}
-                            <button className='bg-gray-300  px-3 py-2 '>
-                                <Link to="https://www.aiadfilmmakers.com/" target='_blank'>  <FlipText name="AI Film" /></Link>
-                            </button>
                         </div>
                         <div>
                             <Button name="Contact" link="/contact" />
@@ -53,22 +51,9 @@ function Navbar() {
                 </div>
 
                 {/* Mobile */}
-                <div className="relative w-full h-fit p-3 pb-8 bg-white lg:hidden ">
-                    {/* Top Bar */}
-                    {/* <div className="flex items-center justify-between px-4">
-                        <Link to="/" target='_blank' className='w-full'>
-                            <img
-                                src={Logo}
-                                alt="VA Logo"
-                                className={`h-8 transition-all  duration-500 ease-in-out ${isOpen ? 'translate-y-80 translate-x-32 ' : 'translate-y-0'
-                                    }`}
-                            />
-                        </Link>
-                        <Hamburger toggle={toggleMenu} isOn={isOpen} />
-                    </div> */}
+                <div className="relative w-full h-fit p-3 pb-8 bg-[#fffefa] lg:hidden ">
                     <div className="relative flex items-center px-4 h-16">
 
-                        {/* Centered Logo */}
                         <Link
                             to="/"
                             target="_blank"
@@ -77,12 +62,10 @@ function Navbar() {
                             <img
                                 src={Logo}
                                 alt="VA Logo"
-                                className={`h-10 transition-all absolute duration-500 ease-in-out ${isOpen ? 'translate-y-80  -translate-x-1/2 left-1/2 ' : 'translate-y-0 left-5'
+                                className={`h-10 transition-all absolute top-5 duration-500 ease-in-out ${isOpen ? 'translate-y-80  -translate-x-1/2 left-1/2 ' : 'translate-y-0 left-5'
                                     }`}
                             />
                         </Link>
-
-                        {/* Hamburger aligned right */}
                         <div className="ml-auto">
                             <Hamburger toggle={toggleMenu} isOn={isOpen} />
                         </div>
@@ -114,12 +97,6 @@ function Navbar() {
                                 style={{ transitionDelay: '500ms' }}
                             >
                                 <Link to="/contact">  Contact </Link>
-                            </li>
-                            <li className={`uppercase bg-gray-300  px-3 py-2 transition-all duration-500 ${isOpen
-                                ? 'translate-y-0 opacity-100'
-                                : 'translate-y-5 opacity-0'}`}
-                                style={{ transitionDelay: '500ms' }}>
-                                <Link to="https://www.aiadfilmmakers.com/" target='_blank'>  <FlipText name="AI Film" /></Link>
                             </li>
                         </ul>
                     </div>

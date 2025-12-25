@@ -19,13 +19,13 @@ const Hero = () => {
                         <div>
                             <h1 className='md:text-3xl text-2xl font-extralight tracking-wide md:leading-10'>We are a globally recognized boutique design agency, crafting strategic, high-quality solutions that amplify brand values. Our agile, independent team blends strategy, design, and innovation to deliver impactful results.</h1>
                             <br />
-                            <h1 className='md:text-3xl text-2xl font-extralight tracking-wide md:leading-10'>
+                            <h1 className='md:text-3xl text-2xl font-extralight tracking-wide'>
                                 Meet the Mind Behind the Magic </h1>
-                            <h1 className='md:text-3xl text-2xl my-5 font-light tracking-wide md:leading-10'>
+                            <h1 className='md:text-3xl text-2xl my-5 font-light tracking-wide'>
                                 <q>The spark behind our wildest ideas. If you can dream it, He can make it happen</q></h1>
                            
-                            <h1 className='md:text-3xl text-2xl font-semibold tracking-wide md:leading-10'>Rajesh R</h1>
-                            <h1 className='md:text-2xl text-xl font-light tracking-wide md:leading-10'>Chairman and Managing Director</h1>
+                            <h1 className='md:text-3xl text-2xl font-semibold tracking-wide '>Rajesh R</h1>
+                            <h1 className='md:text-2xl text-xl font-light text-gray-600  '>Chairman and Managing Director</h1>
 
 
                         </div>
