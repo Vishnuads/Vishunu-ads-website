@@ -12,17 +12,17 @@ const Service = () => {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
-                            duration: 0.3,
-                            delay: 0.3
+                            duration: 0.3
                         }}
+                        viewport={{once : true}}
                         className='tracking-widest font-extralight py-4 flex items-center uppercase justify-center'><Dot /> what we offer?</motion.p>
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
-                            duration: 0.3,
-                            delay: 0.3
+                            duration: 0.3
                         }}
+                        viewport={{once : true}}
                         className=' text-6xl'>Services</motion.h1>
                     <p className='md:text-2xl px-5 text-xl  tracking-wide font-extralight md:w-[68%] pt-10  mx-auto text-center'>Our team brings developers, designers, strategists, and analysts together to craft seamless digital experiences. We don’t cut corners - every product is built with precision, staying true to its original vision. </p>
                 </div>

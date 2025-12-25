@@ -6,30 +6,24 @@ import { motion } from 'framer-motion'
 const About = () => {
     return (
         <>
-            <motion.section
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    duration: 0.5,
-                    delay: 0.5
-                }}
+            <section
                 className='relative pt-20 max-w-6xl mx-auto  overflow-hidden'>
                 <div className="text-center  pb-10">
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
-                            duration: 0.3,
-                            delay: 0.3
+                            duration: 0.3
                         }}
+                        viewport={{once : true}}
                         className='tracking-widest font-extralight py-4 flex items-center uppercase justify-center'> About us <Dot /></motion.p>
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
-                            duration: 0.3,
-                            delay: 0.3
+                            duration: 0.3
                         }}
+                        viewport={{once : true}}
                         className=' md:text-6xl text-4xl'>Who We Are?</motion.h1>
                 </div>
 
@@ -38,7 +32,7 @@ const About = () => {
                     specialize in transforming ideas into memorable campaigns. Whether
                     you're a startup or an established brand, our tailor-made solutions are
                     designed to help you succeed in an ever-evolving marketplace.</p>
-            </motion.section>
+            </section>
 
         </>
     )

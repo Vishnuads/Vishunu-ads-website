@@ -19,30 +19,25 @@ const Works = () => {
     ]
     return (
         <>
-            <motion.section
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    duration: 0.3,
-                    delay: 0.3
-                }}
+            <section
+                
                 className='relative pt-20 max-w-6xl mx-auto min-h-screen overflow-hidden'>
                 <div className="text-center border-b pb-6">
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
-                            duration: 0.3,
-                            delay: 0.3
+                            duration: 0.3
                         }}
+                        viewport={{once : true}}
                         className='tracking-widest font-extralight py-4 flex items-center justify-center'><Dot /> SHOWCASE</motion.p>
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
-                            duration: 0.3,
-                            delay: 0.3
+                            duration: 0.3
                         }}
+                        viewport={{once : true}}
                         className=' text-6xl'>Our Works</motion.h1>
                 </div>
                 <div className="grid md:grid-cols-2 px-5 gap-6 my-10">
@@ -51,14 +46,14 @@ const Works = () => {
                             <img src={work.img} alt="works" className=' object-cover md:h-120 h-80' />
                             <h1 className='text-4xl my-4 font-light'>{work.name}</h1>
                             <p className='text-lg my-4 font-extralight'>{work.desc}</p>
-                            <Button name="Learn More" />
+                            {/* <Button name="Learn More" /> */}
                         </div>
                     ))}
                 </div>
 
-            </motion.section>
+            </section>
             <div className="flex justify-center   overflow-hidden">
-                <MovingArrow label="view all work" />
+                <MovingArrow label="view all work" link="/projects" />
             </div>
 
 

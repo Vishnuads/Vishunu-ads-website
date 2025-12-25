@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform} from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import { Dot } from 'lucide-react'
 import React, { useRef } from 'react'
 
@@ -48,13 +48,13 @@ const Test = () => {
                         <div className='flex flex-col items-center justify-center gap-2 absolute top-0  w-full px-5 '>
                             {test.map((t, index) => {
                                 const start = index / test.length
-                                const end = start  / test.length
-                                const y = useTransform( scrollYProgress, [start, end], [0.5, 1] )
+                                const end = start / test.length
+                                const y = useTransform(scrollYProgress, [start, end], [0.5, 1])
                                 // const op = 1 - index * 0.12
                                 // const opacity = useTransform( scrollYProgress, [0, 0.5],    [op, 1]  )
-                                const sc = (100 - (index * 4)) / 100;              
-                                const scale = useTransform( scrollYProgress, [0, `0.${index}`], [sc, 1])
-                                
+                                const sc = (100 - (index * 4)) / 100;
+                                const scale = useTransform(scrollYProgress, [0, `0.${index}`], [sc, 1])
+
                                 return (
                                     <motion.div
                                         key={t.id}

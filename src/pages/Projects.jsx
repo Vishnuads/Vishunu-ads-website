@@ -10,7 +10,6 @@ const Projects = () => {
         <Navbar/>
         <Hero/>
         <Footer/>
-
     </div>
       
     </>

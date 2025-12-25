@@ -40,20 +40,21 @@ const SingleBlog = () => {
             </div>
           </div>
 
-          <div className='py-10 relative'>
-            <div className="absolute inset-0 bg-linear-to-r from-white via-transparent to-white z-10"></div>
+          <div className='my-10 relative group '>
+            <div className="absolute inset-0 bg-linear-to-r from-[#fffefa] via-transparent to-[#fffefa] group-hover:z-0 z-10"></div>
+            <Link to="/" className="">
+              <Marquee className="cursor-pointer">
+                <div className="pointer-events-auto flex items-center gap-5">
 
-            <Marquee pauseOnHover className="cursor-pointer">
-              <div className="pointer-events-auto flex items-center gap-5">
-                <Link to="/" className="hover:underline">
                   <strong>Next Article</strong>
                   <span className="md:text-2xl text-xl font-light">
                     The Psychology of Converting Websites
                   </span>
-                </Link>
-                <img src={Img} alt="img" className="h-30 w-30 object-cover" />
-              </div>
-            </Marquee>
+
+                  <img src={Img} alt="img" className="h-30 w-30 object-cover" />
+                </div>
+              </Marquee>
+            </Link>
           </div>
         </div>
         <Footer />

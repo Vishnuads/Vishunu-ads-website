@@ -50,7 +50,7 @@ const ServiceCard = () => {
         {
             id: 6,
             title: "Marketing & Growth",
-            description: "We create immersive events and produce stunning visuals that bring your brand to life.",
+            description: "We create  immersive events and produce stunning visuals that bring your brand to life.",
             tags: ["Digital Marketing", "Sales & Marketing Support", "PR & Media Outreach", "Franchise Management"],
             img: S6
         }

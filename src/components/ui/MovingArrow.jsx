@@ -35,25 +35,17 @@ const ArrowTrack = ({ direction = 'right' }) => {
 }
 
 
-const MovingArrowCTA = ({ label = 'Get in touch', onClick }) => {
+const MovingArrow = ({ label = 'Get in touch', link }) => {
   return (
     <div className="flex items-center gap-2">
       <div className="relative">
         <div className="md:absolute inset-0 bg-linear-to-r from-[#fffefa] via-transparent to-[#fffefa] z-10"></div>
         <ArrowTrack direction="right" />
       </div>
-
-      {/* <button
-        onClick={onClick}
-        className="flex items-center justify-center w-50 gap-3 border border-black/20 rounded-full px-3 py-2 uppercase tracking-wide transition"
-      >
-        {label}
-        <span className="bg-black text-white rounded-full p-2">
-          <ArrowUpRight size={16} />
-        </span>
-      </button> */}
+      
       <div className="w-50">
-      <Button name={label}/></div>
+        <Button name={label} link={link} />
+      </div>
 
       <div className="relative">
         <div className="md:absolute inset-0 bg-linear-to-r from-[#fffefa] via-transparent to-[#fffefa] z-10 "></div>
@@ -63,4 +55,4 @@ const MovingArrowCTA = ({ label = 'Get in touch', onClick }) => {
   )
 }
 
-export default MovingArrowCTA
+export default MovingArrow

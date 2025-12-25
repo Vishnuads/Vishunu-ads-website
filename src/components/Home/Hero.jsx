@@ -24,7 +24,7 @@ const Hero = () => {
                                     Get in Touch
                                     <span className='text-black rounded-full p-1 bg-white'> <ArrowUpRight /> </span>
                                 </button> */}
-                                <Button2 name="Get in Touch"/>
+                                <Button2 name="Get in Touch" link="/contact"/>
 
                             </div>
                         </div>
