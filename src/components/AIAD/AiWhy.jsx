@@ -24,7 +24,7 @@ const AiWhy = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-10"
         >
-          
+
           <span className="flex items-center justify-center font-light gap-2 mb-4  tracking-widest uppercase   ">
             <Dot />  The Future of Production
           </span>
@@ -34,10 +34,8 @@ const AiWhy = () => {
           </h2>
         </motion.div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          {/* Card 1 */}
           <motion.div
             variants={card}
             initial="hidden"
@@ -45,18 +43,14 @@ const AiWhy = () => {
             viewport={{ once: true }}
             className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white"
           >
-            {/* <img
-              src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80"
-              alt="Global locations"
-              className="absolute inset-0 w-full h-full object-cover"
-            /> */}
+
             <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
 
             <div className="relative p-6">
               <h3 className="text-2xl font-semibold  mb-4">
                 Go anywhere, without going anywhere.
               </h3>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Create stunning scenes from across the globe—no travel, no
                 logistics, just limitless virtual locations.
               </p>
@@ -82,19 +76,15 @@ const AiWhy = () => {
             viewport={{ once: true }}
             className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white"
           >
-            {/* <img
-              src="https://images.unsplash.com/photo-1639189702833-8de5ecf2ca8f?auto=format&fit=crop&w=1170&q=80"
-              alt="Cost efficient production"
-              className="absolute inset-0 w-full h-full object-cover"
-            /> */}
+
             <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
 
-            <div className="relative p-10 h-full flex flex-col justify-between">
+            <div className="relative p-6 h-full flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl font-semibold  mb-4">
                   Save big, shoot smarter.
                 </h3>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
                   Reduce production costs by up to 70% while maintaining
                   cinematic-quality visuals.
                 </p>
@@ -105,9 +95,9 @@ const AiWhy = () => {
               </span>
             </div>
           </motion.div>
-</div>
-          {/* Wide Card */}
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-6 my-4">
+        </div>
+        {/* Wide Card */}
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-6 my-4">
           <motion.div
             variants={card}
             initial="hidden"
@@ -115,14 +105,14 @@ const AiWhy = () => {
             viewport={{ once: true }}
             className="md:col-span-2 relative rounded-3xl overflow-hidden border border-gray-200 bg-white"
           >
-            
+
             <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
 
-            <div className="relative p-10 max-w-3xl">
+            <div className="relative p-6 max-w-3xl">
               <h3 className="text-2xl font-semibold mb-4">
                 Any style, any time—no limits.
               </h3>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 From retro noir to futuristic sci-fi, create any visual style
                 instantly—without sets, seasons, or constraints.
               </p>
@@ -146,33 +136,18 @@ const AiWhy = () => {
             viewport={{ once: true }}
             className=" relative rounded-3xl overflow-hidden border border-gray-200 bg-white"
           >
-            
             <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
 
-            <div className="relative p-10 max-w-3xl">
+            <div className="relative p-6 max-w-3xl">
               <h3 className="text-2xl font-semibold mb-4">
-                High-Quality, Engaging Ads
+                High-Quality, <br /> Engaging Ads
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Our copywriters, editors, and designers ensure real impact.
               </p>
-
-              {/* <div className="flex flex-wrap gap-3">
-                {["Minimalist", "Cinematic", "+ More"].map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-4 py-2 bg-gray-100 border border-gray-300 text-gray-800 rounded-full text-xs font-medium"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div> */}
             </div>
           </motion.div>
-
-          </div>
-
-        
+        </div>
       </div>
     </section>
   );
