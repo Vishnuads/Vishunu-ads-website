@@ -62,7 +62,7 @@ export default function HowWeWorkSection() {
           className="text-center max-w-4xl mx-auto mb-28"
         >
 
-          <span className="flex items-center justify-center gap-2 mb-4 text-xs tracking-widest uppercase  ">
+          <span className="flex items-center justify-center font-light gap-2 mb-4  tracking-widest uppercase  ">
               Our Process <Dot/> 
           </span>
 

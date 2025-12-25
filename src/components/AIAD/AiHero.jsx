@@ -9,7 +9,7 @@ const Ai = () => {
 
         {/* Eyebrow */}
         <div className="flex justify-center mb-4">
-          <span className="inline-flex items-center gap-2 text-xs tracking-wider uppercase ">
+          <span className="inline-flex items-center gap-2 font-light tracking-wider uppercase ">
            <Dot/> Next-Gen Creative Studio
             {/* <Sparkles className="w-3.5 h-3.5 text-gray-500" /> */}
           </span>

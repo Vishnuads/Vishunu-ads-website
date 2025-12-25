@@ -18,7 +18,7 @@ const AiShoot = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             
-            <span className="flex items-center gap-2 mb-4 text-xs tracking-widest uppercase   ">
+            <span className="flex items-center  font-light gap-2 mb-4  tracking-widest uppercase   ">
            <Dot/> Hybrid Approach
           </span>
 

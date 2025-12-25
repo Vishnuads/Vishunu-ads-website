@@ -66,7 +66,7 @@ export default function AiService() {
           transition={{ duration: 0.7 }}
           className="text-center max-w-4xl mx-auto mb-12"
         >
-          <span className="flex items-center justify-center gap-2 mb-6 text-xs tracking-widest uppercase   ">
+          <span className="flex items-center justify-center font-light gap-2 mb-6 tracking-widest uppercase   ">
             Our Expertise <Dot/> 
           </span>
 

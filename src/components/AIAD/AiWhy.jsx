@@ -25,7 +25,7 @@ const AiWhy = () => {
           className="text-center mb-20"
         >
           
-          <span className="flex items-center justify-center gap-2 mb-4 text-xs tracking-widest uppercase   ">
+          <span className="flex items-center justify-center font-light gap-2 mb-4  tracking-widest uppercase   ">
             <Dot />        The Future of Production
           </span>
 
