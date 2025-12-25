@@ -26,7 +26,7 @@ const AiWhy = () => {
         >
           
           <span className="flex items-center justify-center font-light gap-2 mb-4  tracking-widest uppercase   ">
-            <Dot />        The Future of Production
+            <Dot />  The Future of Production
           </span>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl  ">
@@ -35,7 +35,7 @@ const AiWhy = () => {
         </motion.div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Card 1 */}
           <motion.div
@@ -105,8 +105,9 @@ const AiWhy = () => {
               </span>
             </div>
           </motion.div>
-
+</div>
           {/* Wide Card */}
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-6 my-4">
           <motion.div
             variants={card}
             initial="hidden"
@@ -114,11 +115,7 @@ const AiWhy = () => {
             viewport={{ once: true }}
             className="md:col-span-2 relative rounded-3xl overflow-hidden border border-gray-200 bg-white"
           >
-            {/* <img
-              src="https://images.unsplash.com/photo-1618609378039-b572f64c5b42?w=800&q=80"
-              alt="Creative styles"
-              className="absolute inset-0 w-full h-full object-cover"
-            /> */}
+            
             <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
 
             <div className="relative p-10 max-w-3xl">
@@ -142,8 +139,40 @@ const AiWhy = () => {
               </div>
             </div>
           </motion.div>
+          <motion.div
+            variants={card}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className=" relative rounded-3xl overflow-hidden border border-gray-200 bg-white"
+          >
+            
+            <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
 
-        </div>
+            <div className="relative p-10 max-w-3xl">
+              <h3 className="text-2xl font-semibold mb-4">
+                High-Quality, Engaging Ads
+              </h3>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Our copywriters, editors, and designers ensure real impact.
+              </p>
+
+              {/* <div className="flex flex-wrap gap-3">
+                {["Minimalist", "Cinematic", "+ More"].map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-4 py-2 bg-gray-100 border border-gray-300 text-gray-800 rounded-full text-xs font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div> */}
+            </div>
+          </motion.div>
+
+          </div>
+
+        
       </div>
     </section>
   );
