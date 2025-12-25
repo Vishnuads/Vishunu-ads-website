@@ -19,7 +19,15 @@ const Hero = () => {
                         <div>
                             <h1 className='md:text-3xl text-2xl font-extralight tracking-wide md:leading-10'>We are a globally recognized boutique design agency, crafting strategic, high-quality solutions that amplify brand values. Our agile, independent team blends strategy, design, and innovation to deliver impactful results.</h1>
                             <br />
-                            <h1 className='md:text-3xl text-2xl font-extralight tracking-wide md:leading-10'>We are a globally recognized boutique design agency, crafting strategic, high-quality solutions that amplify brand values. Our agile, independent team blends strategy, design, and innovation to deliver impactful results.</h1>
+                            <h1 className='md:text-3xl text-2xl font-extralight tracking-wide md:leading-10'>
+                                Meet the Mind Behind the Magic </h1>
+                            <h1 className='md:text-3xl text-2xl my-5 font-light tracking-wide md:leading-10'>
+                                <q>The spark behind our wildest ideas. If you can dream it, He can make it happen</q></h1>
+                           
+                            <h1 className='md:text-3xl text-2xl font-semibold tracking-wide md:leading-10'>Rajesh R</h1>
+                            <h1 className='md:text-2xl text-xl font-light tracking-wide md:leading-10'>Chairman and Managing Director</h1>
+
+
                         </div>
                         <div className='flex items-center justify-center'>
                             <img src={MD} alt="Rajesh Sir MD" className='h-auto w-80' />
@@ -33,7 +41,7 @@ const Hero = () => {
                         </div>
                         <div>
                             <h1 className='pb-4 md:text-2xl text-xl leading-9'>We’re a tight-knit crew of friends and hardcore creatives who take our work seriously - but never ourselves. If you’re driven, passionate, and ready to grow alongside a team that values both craft and camaraderie, we’d love to meet you.</h1>
-                            <Button name="get in touch"/>
+                            <Button name="get in touch" link="/contact" />
                         </div>
                     </div>
                 </div>
