@@ -13,7 +13,7 @@ const AiWhy = () => {
   };
 
   return (
-    <section className="bg-[#fffefa] py-28">
+    <section className="bg-[#fffefa] py-12">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
@@ -22,7 +22,7 @@ const AiWhy = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-20"
+          className="text-center mb-10"
         >
           
           <span className="flex items-center justify-center font-light gap-2 mb-4  tracking-widest uppercase   ">
@@ -52,7 +52,7 @@ const AiWhy = () => {
             /> */}
             <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
 
-            <div className="relative p-10">
+            <div className="relative p-6">
               <h3 className="text-2xl font-semibold  mb-4">
                 Go anywhere, without going anywhere.
               </h3>

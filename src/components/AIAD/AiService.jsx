@@ -55,7 +55,7 @@ export default function AiService() {
   };
 
   return (
-    <section className="relative bg-[#fffefa] py-28">
+    <section className="relative bg-[#fffefa] py-14">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}

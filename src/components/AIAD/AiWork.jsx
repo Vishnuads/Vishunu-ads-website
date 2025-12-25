@@ -50,7 +50,7 @@ export default function HowWeWorkSection() {
   ];
 
   return (
-    <section className="bg-[#fffefa] py-32">
+    <section className="bg-[#fffefa] py-16">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
