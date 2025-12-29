@@ -170,7 +170,7 @@ export default function HowWeWorkSection() {
             Ready to bring your vision to life?
           </p>
 
-          <Button name="Let's start" link="contact"/>
+          <Button name="Let's start" link="/contact"/>
         </motion.div>
       </div>
     </section>

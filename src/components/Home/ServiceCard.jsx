@@ -15,7 +15,7 @@ const ServiceCard = () => {
         {
             id: 1,
             title: "Company Registration & Legal Solutions",
-            description: "We turn ideas into distinctive brand identities that instantly connect.",
+            description: "We provide hassle-free company registration, compliance, and legal support to help businesses start and operate smoothly. From startups to growing enterprises, our expert solutions ensure legal clarity, compliance, and long-term business security.",
             tags: ["ROC, GST, MSME Registration", "Trademark & Copyright Registration"],
             img: S1
         },
@@ -76,9 +76,9 @@ const ServiceCard = () => {
                                                 <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}>
                                                 <div>
                                                     <h2 className=" md:text-5xl text-xl flex items-center mb-3 font-extralight tracking-tight text-stone-900">
-                                                        <span className='w-2 h-2 mx-2 bg-black rounded-full'></span> {s.title}
+                                                         {s.title}
                                                     </h2>
-                                                    <h3 className="text-sm text-gray-400 font-light w-[95%]">
+                                                    <h3 className="text-sm text-gray-500 font-light w-[95%]">
                                                         {s.description}
                                                     </h3>
                                                 </div>

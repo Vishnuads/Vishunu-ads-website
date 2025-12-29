@@ -8,7 +8,7 @@ const Hero = () => {
             <section className='min-h-screen relative w-full'>
                 
                     <img src={Banner} alt="Hero Banner" className='absolute inset-0 pt-24 h-screen object-cover w-full z-0' />
-                    <div className='max-w-6xl mx-auto  z-10'>
+                    <div className='max-w-6xl relative mx-auto  z-10'>
                         <p className='absolute top-40 left-10 text-white text-4xl font-extralight'>Vishnu Ads & Ventures®</p>
                     </div>
                     <div className='absolute bottom-5 left-0 z-10 w-full'>

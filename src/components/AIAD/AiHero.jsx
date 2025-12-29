@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 const Ai = () => {
   return (
-    <section className="relative min-h-screen bg-[#fffefa] text-gray-900">
+    <section className="relative  bg-[#fffefa] text-gray-900">
       <div className="max-w-7xl mx-auto px-6 pt-30 pb-10">
 
         {/* Eyebrow */}
