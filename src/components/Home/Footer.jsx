@@ -42,7 +42,7 @@ const Footer = () => {
                                             <p> <Link to="/"> Home</Link> </p>
                                             <p><Link to="/projects"> Projects</Link></p>
                                             <p><Link to="/about"> About</Link></p>
-                                            <p><Link to="/"> Blog</Link></p>
+                                            <p><Link to="/#blog"> Blog</Link></p>
                                             {/* <p><Link> Contact</Link></p> */}
                                         </div>
                                     </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <h1 className='lg:text-[170px] md:text-[100px] sm:text-[52px] text-[44px] tracking-wider text-center'>VISHNU ADS</h1>
+                    <h1 className='lg:text-[170px] md:text-[100px] sm:text-[58px] text-[48px] tracking-wider text-center'>VISHNU ADS</h1>
                 </div>
             </section>
 

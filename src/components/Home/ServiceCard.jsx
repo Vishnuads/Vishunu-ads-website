@@ -22,35 +22,35 @@ const ServiceCard = () => {
         {
             id: 2,
             title: "Brand & Creative",
-            description: "We turn ideas into distinctive brand identities that instantly connect.",
+            description: "We build powerful brand identities through strategic branding, graphic design, ad shoots, and video content creation. Our creative solutions help businesses stand out, connect with their audience, and drive lasting brand recognition.",
             tags: ["Branding & Design", "Graphic Designing", "Ad Shoots", "Video Content Creation"],
             img: S2
         },
         {
             id: 3,
             title: "Digital & Tech",
-            description: "We power your brand with intelligent digital strategies and seamless tech integration.",
+            description: "We provide advanced digital solutions including website and app development, CRM & ERP support, WhatsApp chatbot integration, and analytics. Our intelligent tech strategies help businesses optimize operations, improve customer engagement, and scale with confidence.",
             tags: ["Website & App Development", "CRM & ERP Support", "WhatsApp Chatbot Integration", "Strategy & Analytics"],
             img: S3
         },
         {
             id: 4,
             title: "Media & Outdoor",
-            description: "We amplify your presence with targeted media placements and high-impact outdoor visibility.",
+            description: "We deliver strategic media planning and high-impact outdoor advertising including television, FM radio, outdoor promotions, and movie promotions.",
             tags: ["Television & FM Ad Releases", "Outdoor Promotion", "Television Channel Setup", "Movie Promotion"],
             img: S4
         },
         {
             id: 5,
             title: "Events & Production",
-            description: "We create immersive events and produce stunning visuals that bring your brand to life.",
+            description: "We plan and execute impactful events, brand activations, and end-to-end production with seamless coordination and execution.",
             tags: ["Company Registration", "Event Management", "Infrastructure Setup & Training", "Product Distribution Across Globe"],
             img: S5
         },
         {
             id: 6,
             title: "Marketing & Growth",
-            description: "We create  immersive events and produce stunning visuals that bring your brand to life.",
+            description: "We drive business growth through result-oriented digital marketing, sales support, PR, and media outreach. From brand awareness to franchise expansion, our strategies are built to increase visibility, leads, and long-term revenue.",
             tags: ["Digital Marketing", "Sales & Marketing Support", "PR & Media Outreach", "Franchise Management"],
             img: S6
         }

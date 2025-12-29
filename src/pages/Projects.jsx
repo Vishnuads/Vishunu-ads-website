@@ -1,6 +1,7 @@
 import Footer from '@/components/Home/Footer'
 import Navbar from '@/components/Home/Navbar'
 import Hero from '@/components/Projects/Hero'
+import Logo from '@/components/Projects/Logo'
 import React from 'react'
 
 const Projects = () => {
@@ -9,6 +10,7 @@ const Projects = () => {
     <div className="bg-[#fffefa]">
         <Navbar/>
         <Hero/>
+        <Logo/>
         <Footer/>
     </div>
       

@@ -28,7 +28,7 @@ const Logos = () => {
 
     return (
         <>
-            <section className='relative'>
+            <section className='relative md:max-w-6xl mx-auto overflow-hidden'>
                 <div className=" w-full absolute z-10 inset-0 bg-linear-to-r  from-[#fffefa] via-transparent to-[#fffefa]"> </div>
                     <div className=' z-0 my-10'>
                         <Marquee>
