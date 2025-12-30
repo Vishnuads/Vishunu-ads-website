@@ -5,6 +5,35 @@ import Img4 from "../assets/images/services/4.png";
 import Img5 from "../assets/images/services/5.png";
 import Img6 from "../assets/images/services/6.png";
 
+import S1 from '../assets/images/sub/1/1.png'
+import S2 from '../assets/images/sub/1/2.png'
+import S3 from '../assets/images/sub/1/3.png'
+import S4 from '../assets/images/sub/1/4.png'
+
+import B1 from '../assets/images/sub/2/1.png'
+import B2 from '../assets/images/sub/2/2.png'
+import B3 from '../assets/images/sub/2/3.png'
+import B4 from '../assets/images/sub/2/4.png'
+
+import D1 from '../assets/images/sub/3/1.png'
+import D2 from '../assets/images/sub/3/2.png'
+import D3 from '../assets/images/sub/3/3.png'
+import D4 from '../assets/images/sub/3/4.png'
+
+import M1 from '../assets/images/sub/4/1.png'
+import M2 from '../assets/images/sub/4/2.png'
+import M3 from '../assets/images/sub/4/3.png'
+import M4 from '../assets/images/sub/4/4.png'
+
+import E1 from '../assets/images/sub/5/1.png'
+import E2 from '../assets/images/sub/5/2.png'
+import E3 from '../assets/images/sub/5/3.png'
+import E4 from '../assets/images/sub/5/4.png'
+
+import G1 from '../assets/images/sub/6/1.png'
+import G2 from '../assets/images/sub/6/2.png'
+import G3 from '../assets/images/sub/6/3.png'
+import G4 from '../assets/images/sub/6/4.png'
 
 export const serviceData = {
 
@@ -34,18 +63,22 @@ export const serviceData = {
     img: Img1,
     sub: [
       {
+        img: S1,
         head: "Company Registration (ROC, GST, MSME)",
         para: "We help register Private Limited Companies, LLPs, Partnerships, and Proprietorships, managing all ROC filings, GST registration, and MSME certification to ensure smooth legal onboarding.",
       },
       {
+        img: S2,
         head: "Trademark, Copyright & Design Registration",
         para: "Secure your brand name, logo, creative content, and product designs with professional intellectual property registration services that protect your business assets.",
       },
       {
+        img: S3,
         head: "Legal Compliance & Advisory",
         para: "Stay compliant with annual filings, statutory requirements, and corporate governance regulations through our expert legal advisory and compliance management services.",
       },
       {
+        img: S4,
         head: "Business Licenses & Certifications",
         para: "We assist with obtaining industry-specific licenses, permits, and certifications, ensuring your business operates legally and without interruptions.",
       },
@@ -59,7 +92,7 @@ export const serviceData = {
       {
         id: 2,
         ques: "How long does company registration take in India?",
-        ans: "Company registration timelines vary based on the business structure and approvals required, but typically range from 7 to 15 working days when all documents are in order.",
+        ans: "Company registration timelines vary based on the business structure and approvals required, but typically range from 7 to 16 working days when all documents are in order.",
       },
       {
         id: 3,
@@ -102,18 +135,22 @@ export const serviceData = {
     img: Img2,
     sub: [
       {
+        img: B1,
         head: "Logo Design & Brand Identity",
         para: "We design impactful logos and cohesive brand identity systems that define your brand’s personality, values, and market positioning.",
       },
       {
+        img: B2,
         head: "Packaging Design & Visual Communication",
         para: "We create packaging designs that not only look attractive but also tell your product story and influence buying decisions.",
       },
       {
+        img: B3,
         head: " Content Creation & Creative Assets",
         para: "We produce engaging content, creatives, and visual assets designed to connect with audiences and strengthen brand recall.",
       },
       {
+        img: B4,
         head: "Photography & Videography",
         para: "Our professional brand photography and videography services capture high-quality visuals for websites, campaigns, social media, and advertisements.",
       }
@@ -171,18 +208,22 @@ export const serviceData = {
 
     sub: [
       {
+        img: D1,
         head: "Website Design & Development",
         para: " We build fast, responsive, and conversion-focused websites that enhance user experience and strengthen your online presence.",
       },
       {
+        img: D2,
         head: "Application Development",
         para: "Our custom web and mobile app development solutions enable businesses to deliver services efficiently across devices and platforms.",
       },
       {
+        img: D3,
         head: "AI & Automation Solutions",
         para: "We implement intelligent AI tools and automation systems that optimize workflows, personalize customer journeys, and improve decision-making.",
       },
       {
+        img: D4,
         head: " Cloud, CRM & System Integration",
         para: "We support cloud-based systems, CRM integration, and analytics solutions that improve data management, performance tracking, and scalability.",
       },
@@ -242,18 +283,22 @@ export const serviceData = {
     img: Img4,
     sub: [
       {
+        img: M1,
         head: "Media Planning & Strategy",
         para: "We design customized media plans aligned with your business objectives, target audience, and campaign timelines.",
       },
       {
+        img: M2,
         head: "Media Buying & Placement",
         para: "Our team manages cost-effective media buying across print, outdoor, digital screens, and transit media to ensure high-impact visibility.",
       },
       {
+        img: M3,
         head: "Print & Outdoor Advertising",
         para: "We execute newspaper ads, magazine features, hoardings, billboards, and public space advertising with strategic positioning.",
       },
       {
+        img: M4,
         head: "Campaign Monitoring & Optimization",
         para: "We track performance, optimize placements, and refine strategies to maximize reach and brand recall.",
       },
@@ -312,18 +357,22 @@ export const serviceData = {
     img: Img5,
     sub: [
       {
+        img: E1,
         head: "Corporate Events & Conferences",
         para: "We plan and manage corporate meetings, conferences, seminars, and business gatherings with professional execution and attention to detail.",
       },
       {
+        img: E2,
         head: "Product Launches & Brand Activations",
         para: "Our team creates high-impact product launches and brand activations that generate buzz, engagement, and media attention.",
       },
       {
+        img: E3,
         head: "Exhibitions & Trade Shows",
         para: "We design and manage exhibition booths, trade show setups, and on-ground promotions that attract visitors and showcase your brand effectively.",
       },
       {
+        img: E4,
         head: "Event Promotion & Coordination",
         para: "From pre-event promotions to on-site coordination and post-event support, we ensure flawless execution and maximum visibility.",
       },
@@ -382,18 +431,22 @@ export const serviceData = {
     img: Img6,
     sub: [
       {
+        img: G1,
         head: "Immersive Marketing Experiences",
         para: "We create immersive brand interactions using AR, VR, and experiential technologies that enhance engagement and memorability.",
       },
       {
+        img: G2,
         head: " Sustainable & Green Marketing",
         para: "We design eco-conscious marketing strategies that align brand growth with sustainability and environmental responsibility.",
       },
       {
+        img: G3,
         head: "Gamification & Interactive Campaigns",
         para: "Our gamified marketing campaigns drive participation, retention, and brand loyalty through interactive user experiences.",
       },
       {
+        img: G4,
         head: "Innovation Strategy & Execution",
         para: "We help businesses identify, plan, and implement innovative marketing solutions aligned with future trends and consumer behavior.",
       },

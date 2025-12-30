@@ -12,7 +12,8 @@ import { motion } from 'framer-motion'
 const Works = () => {
 
     const works = [
-        { img: W1, name: "Lévrière Passion", desc: "Luxury cosmetics that redefine elegance, empowering women with timeless beauty and sophistication" },
+        { img: W1, name: "Mirakle", desc: <>Premium Hygiene & Food Products <br/> <b> End-to-end </b> Brand & Growth Partner
+        </> },
         { img: W2, name: "GiftGrove", desc: "Handcrafted gift packaging that transforms every present into a beautifully curated experience" },
         { img: W3, name: "Vermeer Paints", desc: "Exquisite vintage-inspired paints crafted for artists who demand depth, richness, and true heritage" },
         { img: W4, name: "Ember & Oak", desc: "Bold craft beer rooted in tradition, brewed with passion, and designed for true connoisseurs" }
@@ -42,7 +43,7 @@ const Works = () => {
                 </div>
                 <div className="grid md:grid-cols-2 px-5 gap-6 my-10">
                     {works.map((work, idx) => (
-                        <div className='h-full w-full my-5' key={idx}>
+                        <div className='h-full w-full my-4' key={idx}>
                             <img src={work.img} alt="works" className=' object-cover md:h-120 h-80' />
                             <h1 className='text-4xl my-4 font-light'>{work.name}</h1>
                             <p className='text-lg my-4 font-extralight'>{work.desc}</p>

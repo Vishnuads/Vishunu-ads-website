@@ -68,12 +68,13 @@ const ServiceCard = () => {
                                 incrementY={20}
                                 className="will-change-transform"
                             >
+                                <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}>
                                 <div className=" border border-stone-200 bg-white p-8">
                                     <div className="grid grid-cols-1 md:grid-cols-2 ">
                                         {/* <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}> */}
                                             <div className="order-2 md:order-1 flex flex-col space-y-4 justify-between ">
                                                 <p className='border rounded-full px-4 py-2 w-fit'>{s.id}</p>
-                                                <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}>
+                                                {/* <Link to={`/service/${s.title.replace(/\s+/g,'-').toLowerCase()}`}> */}
                                                 <div>
                                                     <h2 className=" md:text-5xl text-xl flex items-center mb-3 font-extralight tracking-tight text-stone-900">
                                                          {s.title}
@@ -82,7 +83,7 @@ const ServiceCard = () => {
                                                         {s.description}
                                                     </h3>
                                                 </div>
-                                                </Link>
+                                                {/* </Link> */}
                                                 <div className='flex flex-wrap items-center gap-2 w-full'>
                                                     {s.tags.map((t, idx) => (
                                                         <span
@@ -97,6 +98,7 @@ const ServiceCard = () => {
                                         </div>
                                     </div>
                                 </div>
+                                </Link>
                             </CardSticky>
                         ))}
 

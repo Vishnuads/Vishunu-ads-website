@@ -10,13 +10,6 @@ const FAQ = ({ qna }) => {
         setIsOpen((prev) => (prev === index ? null : index));
     };
 
-    // const qna = [
-    //     { id: 1, ques: "What services do you offer?", ans: " We specialize in brand identity, digital design, marketing strategy, and content creation to help businesses grow. Whether you need a full-scale rebrand or targeted marketing, we’ve got you covered." },
-    //     { id: 2, ques: "How do you determine project pricing?", ans: "Pricing depends on the project’s scope, complexity, and timeline. The more details you provide in the contact form, the more accurate our estimate will be." },
-    //     { id: 3, ques: "How long does a typical project take?", ans: " Timelines vary based on project size and requirements, but we always prioritize efficiency without sacrificing quality. After reviewing your needs, we’ll provide a detailed turnaround estimate." },
-    //     { id: 4, ques: "Do you work with startups or only established brands?", ans: " We collaborate with businesses of all sizes, from startups to global brands. Whether you’re building from scratch or refining an existing brand, we’re here to help." }
-    // ]
-
     return (
         <div className='max-w-6xl mx-auto px-5 pb-10'>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 py-10">
@@ -27,7 +20,6 @@ const FAQ = ({ qna }) => {
                 <div className='col-span-2'>
                     {qna.qa.map((q) => {
                         const open = isOpen === q.id
-
                         return (
                             <div key={q.id} className='border-b pb-3 mb-3'>
                                 <button onClick={() => toggle(q.id)} className="transition-all duration-400 w-full">
@@ -45,7 +37,6 @@ const FAQ = ({ qna }) => {
                         )})}
                 </div>
             </div>
-
         </div>
     )
 }
