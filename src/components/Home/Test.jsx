@@ -36,7 +36,7 @@ const Test = () => {
 
     return (
         <>
-            <section ref={ref} className='test  mb-20 relative sm:min-h-[150vh] min-h-[200vh] md:min-h-[170vh] lg:min-h-[180vh] xl:[200vh]'>
+            <section ref={ref} className='test  mb-20 relative  min-h-[260vh] md:min-h-[220vh] lg:min-h-[230vh] '>
                 <div className='absolute inset-0  bg-linear-to-b from-black/90 via-black/10 to-black/10'></div>
                 <div className=' text-white  absolute inset-0 '>
                     <div className="text-center  py-10">
