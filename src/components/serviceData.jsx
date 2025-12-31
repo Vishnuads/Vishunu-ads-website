@@ -31,8 +31,8 @@ import E3 from '../assets/images/sub/5/3.png'
 import E4 from '../assets/images/sub/5/4.png'
 
 import G1 from '../assets/images/sub/6/1.png'
-import G2 from '../assets/images/sub/6/2.png'
-import G3 from '../assets/images/sub/6/3.png'
+import G2 from '../assets/images/sub/6/3.png'
+import G3 from '../assets/images/sub/6/2.png'
 import G4 from '../assets/images/sub/6/4.png'
 
 export const serviceData = {
