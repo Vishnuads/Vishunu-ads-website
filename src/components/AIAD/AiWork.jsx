@@ -16,36 +16,31 @@ export default function HowWeWorkSection() {
       icon: FaLightbulb,
       title: "Brief It",
       description: "We understand your goal and your audience.",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
     },
     {
       icon: FaMapMarkedAlt,
       title: "Plan It",
       description: "Script, style, and visual flow mapped clearly.",
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
     },
     {
       icon: FaRobot,
       title: "Create It",
       description: "AI-generated visuals aligned with your brand.",
-      image:
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"
     },
     {
       icon: FaMagic,
       title: "Polish It",
       description: "Editing, color, voice, and finishing touches.",
-      image:
-        "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80"
     },
     {
       icon: FaRocket,
       title: "Final Touch",
       description: "Feedback, refinement, and launch-ready delivery.",
-      image:
-        "https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=800&q=80"
     }
   ];
 
@@ -61,7 +56,6 @@ export default function HowWeWorkSection() {
           transition={{ duration: 0.7 }}
           className="text-center max-w-4xl mx-auto mb-28"
         >
-
           <span className="flex items-center justify-center font-light gap-2 mb-4  tracking-widest uppercase  ">
               Our Process <Dot/> 
           </span>
@@ -97,12 +91,9 @@ export default function HowWeWorkSection() {
                 >
                   {/* Desktop */}
                   <div className="hidden lg:grid lg:grid-cols-2 gap-6 items-center">
+
                     {/* Text */}
-                    <div
-                      className={`${
-                        isEven ? "text-right pr-8" : "text-left pl-8 col-start-2"
-                      }`}
-                    >
+                    <div className={` ${ isEven ? "text-right pr-8" : "text-left pl-8 col-start-2" } `} >
                       <Icon className="text-3xl text-gray-400 mb-4 inline-block" />
                       <h3 className="text-3xl font-semibold text-gray-900 mb-4">
                         {step.title}
@@ -113,11 +104,7 @@ export default function HowWeWorkSection() {
                     </div>
 
                     {/* Image */}
-                    <div
-                      className={`${
-                        isEven ? "pl-8" : "pr-8 col-start-1 row-start-1"
-                      }`}
-                    >
+                    <div className={`${ isEven ? "pl-8" : "pr-8 col-start-1 row-start-1" }`} >
                       <div className="rounded-3xl overflow-hidden border border-gray-200 bg-white">
                         <img
                           src={step.image}

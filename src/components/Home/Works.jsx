@@ -8,15 +8,14 @@ import W4 from '../../assets/images/w4.png'
 import MovingArrow from '../ui/MovingArrow'
 import { motion } from 'framer-motion'
 
-
 const Works = () => {
 
     const works = [
         { img: W1, name: "Mirakle", desc: <>Premium Hygiene & Food Products <br/> <b> End-to-end </b> Brand & Growth Partner
         </> },
-        { img: W2, name: "GiftGrove", desc: "Handcrafted gift packaging that transforms every present into a beautifully curated experience" },
-        { img: W3, name: "Vermeer Paints", desc: "Exquisite vintage-inspired paints crafted for artists who demand depth, richness, and true heritage" },
-        { img: W4, name: "Ember & Oak", desc: "Bold craft beer rooted in tradition, brewed with passion, and designed for true connoisseurs" }
+        { img: W2, name: "Life Plus Ayurveda", desc: "Handcrafted gift packaging that transforms every present into a beautifully curated experience" },
+        { img: W3, name: "GlowbyNJK", desc: "Exquisite vintage-inspired paints crafted for artists who demand depth, richness, and true heritage" },
+        { img: W4, name: "Amirtha Rushikaa", desc: "Bold craft beer rooted in tradition, brewed with passion, and designed for true connoisseurs" }
     ]
     return (
         <>

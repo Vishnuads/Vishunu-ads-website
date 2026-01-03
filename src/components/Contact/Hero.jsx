@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowDownRight, Dot } from 'lucide-react'
 
 const Hero = () => {
-    
+
 
     return (
         <section className=' pt-20'>
@@ -32,14 +32,16 @@ const Hero = () => {
                             <input
                                 id='name'
                                 name='name'
-                                placeholder='Name*'
+                                placeholder='Name'
+                                required
                                 className='border-b w-full p-3 '
                                 type="text" />
 
                             <input
                                 id='email'
                                 name='email'
-                                placeholder='Email*'
+                                placeholder='Email '
+                                required
                                 className='border-b w-full p-3'
                                 type="email" />
 
@@ -47,17 +49,24 @@ const Hero = () => {
                                 id='phone'
                                 name='phone'
                                 placeholder='Phone'
+                                required
                                 className='border-b w-full p-3'
                                 type="text" />
 
-                            <textarea name="mes" id="mes" placeholder='Message' className='border-b w-full p-3'></textarea>
+                            <textarea
+                                name="mes"
+                                id="mes"
+                                required
+                                placeholder='Message'
+                                className='border-b w-full p-3'>
+                            </textarea>
                             <div>
                                 <button type='submit' className='px-8 py-2 border rounded-full'> Submit </button>
                             </div>
                         </form>
                     </div>
                 </div>
-               
+
 
             </div>
         </section>
