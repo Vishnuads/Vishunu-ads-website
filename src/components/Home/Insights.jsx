@@ -1,8 +1,8 @@
 
 import React from 'react'
 import Button from '../ui/Button'
-import B1 from '../../assets/images/blogs/1.png'
-import B2 from '../../assets/images/blogs/2.png'
+import B1 from '../../assets/images/blogs/01.png'
+import B2 from '../../assets/images/blogs/002.jpg'
 import B3 from '../../assets/images/blogs/3.png'
 import Ballpit from '../Ballpit'
 import fb from '../../assets/logos/fb.png'
@@ -23,22 +23,24 @@ const Insights = () => {
     const posts = [
         {
             id: 1,
-            title: "Why Minimalist Design is More Powerful",
-            date: "Feb 12, 2025",
-            img: B1
+            title: "The Transformative Power of AI in Digital Marketing by 2026",
+            date: "Jan 2, 2026",
+            img: B1,
+            link: '/blog-post-1'
         },
         {
             id: 2,
-            title: "How to Make Your Brand Unforgettable",
-            date: "Jan 25, 2025",
-            img: B2
+            title: "Understanding Google's Latest Algorithm Updates in 2025",
+            date: "Dec 13, 2025",
+            img: B2,
+            link: '/blog-post-2'
         },
-        {
-            id: 3,
-            title: "The Psychology of Converting Websites",
-            date: "Jan 7, 2025",
-            img: B3
-        }
+        // {
+        //     id: 3,
+        //     title: "The Psychology of Converting Websites",
+        //     date: "Jan 7, 2025",
+        //     img: B3
+        // }
     ]
 
     return (
@@ -51,17 +53,19 @@ const Insights = () => {
                     </div>
                     <div className="grid md:grid-cols-3  grid-cols-1 gap-6">
                         {posts.map((p) => (
-                            <div key={p.id} className=''>
-                                <img src={p.img} alt="blog imgs" className='mb-2 object-cover h-80 w-full' />
-                                <p className='text-gray-500 text-sm'>{p.date}</p>
-                                <h1 className='font-semibold  my-3 line-clamp-1'>{p.title}</h1>
-                                <Link to={`/blog/${p.title.replace(/\s+/g, "-").toLowerCase()}`}>
-                                <p className='text-sm flex items-center gap-1'>Read More </p></Link>
-                            </div>
+                            <Link to={`/blog${p.link}`}>
+                                <div key={p.id} className=''>
+                                    <img src={p.img} alt="blog imgs" className='mb-2 object-cover h-80 w-full' />
+                                    <p className='text-gray-500 text-sm'>{p.date}</p>
+                                    <h1 className='font-semibold  my-2 '>{p.title}</h1>
+
+                                    <p className='text-sm flex items-center gap-1'>Read More </p>
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
-                
+
                 <Ballpit
                     className="absolute inset-0 pointer-events-none z-0 "
                     // count={50}
@@ -74,7 +78,7 @@ const Insights = () => {
                     maxSize={1.5}
                     icons={[fb, ins, tel, yt, lin, meta, lik, mail, mes, thu, wh]}
                 />
-                
+
             </section>
 
 

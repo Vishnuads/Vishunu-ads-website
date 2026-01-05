@@ -8,6 +8,7 @@ import SingleService from './pages/SingleService'
 import Projects from './pages/Projects'
 import ScrollToHash from './pages/ScrollToHash'
 import Aiad from './pages/Aiad'
+import SingleBlog2 from './pages/SingleBlog2'
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog/:name" element={<SingleBlog/>} />
+          <Route path="/blog/blog-post-1" element={<SingleBlog/>} />
+          <Route path="/blog/blog-post-2" element={ <SingleBlog2/> } />
           <Route path="/service/:name" element={<SingleService/>} />
           <Route path="/projects" element={<Projects/>} />
           <Route path="/aiad-film" element={<Aiad/> } />

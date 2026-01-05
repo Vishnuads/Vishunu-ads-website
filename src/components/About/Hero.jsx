@@ -15,33 +15,50 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div className='grid md:grid-cols-2 grid-cols-1 gap-3 py-10'>
-                        <div>
-                            <h1 className='md:text-3xl text-2xl font-extralight tracking-wide md:leading-10'>We are a globally recognized boutique design agency, crafting strategic, high-quality solutions that amplify brand values. Our agile, independent team blends strategy, design, and innovation to deliver impactful results.</h1>
+                    <div className=' md:py-10 py-5'>
+                        <div className="">
+
+                            {/* Intro */}
+                            <h1 className="md:text-xl text-lg font-light tracking-wide">
+                               Vishnu Ads & Ventures is a results-driven digital marketing and branding agency with 12+ years of industry expertise, helping businesses build a strong digital presence and achieve measurable growth. We specialize in SEO, performance marketing, brand strategy, AI-powered content, and high-performance web solutions that enhance visibility, credibility, and conversions. By combining data-driven strategy, creativity, and advanced technology, we empower brands to scale sustainably in a competitive digital landscape.
+                            </h1>
+
                             <br />
-                            <h1 className='md:text-3xl text-2xl font-extralight tracking-wide'>
-                                Meet the Mind Behind the Magic </h1>
-                            <h1 className='md:text-3xl text-2xl my-5 font-light tracking-wide'>
-                                <q>The spark behind our wildest ideas. If you can dream it, He can make it happen</q></h1>
-                           
-                            <h1 className='md:text-3xl text-2xl font-semibold tracking-wide '>Rajesh R</h1>
-                            <h1 className='md:text-2xl text-xl font-light text-gray-600  '>Chairman and Managing Director</h1>
 
-
+                            {/* Services Overview */}
+                            {/* <h1 className="md:text-xl text-lg font-light tracking-wide">
+                                We create AI-powered video editing and visual storytelling solutions that deliver high-impact content for social media, advertising, and brand campaigns, ensuring faster turnaround and maximum engagement. Our promotion and brand collaboration services connect businesses with the right creators and platforms to amplify reach and trust. We also design high-performance websites and e-commerce platforms that blend elegant design with seamless functionality. By integrating strategy, creativity, technology, and AI, we empower brands for long-term success in a competitive digital landscape.
+                            </h1> */}
+                            <br />
                         </div>
-                        <div className='flex items-center justify-center'>
+
+                        {/* <div className='flex items-center justify-center'>
                             <img src={MD} alt="Rajesh Sir MD" className='h-auto w-80' />
+                        </div> */}
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 py-10">
+                        <div>
+                            <h1 className='flex items-center  gap-4 uppercase'> <span className='w-2 h-2 bg-black rounded-full'></span>
+                                <span className='text-gray-800 md:text-2xl text-xl tracking-wider'>RAJESH RAVINDRAN</span>
+                            </h1>
+                            <p className='text-gray-500 tracking-wider'>  Founder & Managing Director</p>
+                        </div>
+                        <div className='col-span-2'>
+                            <h1 className='pb-4 md:text-xl text-lg md:leading-9'>The visionary behind our Team, with roots in Coimbatore, Rajesh began his advertising journey in 2006. He has promoted over 280 movies and partnered with 40+ brands, building a strong presence in the advertising and film industries. His leadership and industry insight paved the way for strategic alliances within the advertising and marketing community, enabling meaningful collaborations with agencies, media partners, and brand stakeholders.</h1>
+                            <q> <span className='text-xl font-light'>The spark behind our wildest ideas. If you can dream it, He can make it happen </span></q>
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 py-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 py-10">
                         <div>
-                            <h1 className='flex items-center  gap-2 uppercase'> <Dot size={52} />
-                                <span className='text-gray-500 tracking-wider'>Want to work with us?</span> </h1>
+                            <h1 className='flex items-center  gap-4 uppercase'> <span className='w-2 h-2 bg-black rounded-full'></span>
+                                <span className='text-gray-800 md:text-2xl text-xl tracking-wider'>SANGEETHA PRIYA</span> </h1>
+                            <p className='text-gray-500 tracking-wider '> Co-Founder & Director</p>
                         </div>
-                        <div>
-                            <h1 className='pb-4 md:text-2xl text-xl leading-9'>We’re a tight-knit crew of friends and hardcore creatives who take our work seriously - but never ourselves. If you’re driven, passionate, and ready to grow alongside a team that values both craft and camaraderie, we’d love to meet you.</h1>
-                            <Button name="get in touch" link="/contact" />
+                        <div className='col-span-2'>
+                            <h1 className='pb-4 md:text-xl text-lg md:leading-9'>A seasoned digital strategist with a strong foundation in software engineering, Priya brings extensive experience working with leading brands across India. As a key force behind Vishnu Ads & Ventures’ digital initiatives, she drives innovative marketing strategies, oversees the agency’s digital presence, and enhances audience engagement across platforms. Through seamless collaboration with internal teams and strategic partners, she delivers high-impact digital solutions that strengthen brand performance and elevate client success.</h1>
+                            <q> <span className='text-xl font-light'>Where technology meets strategy, she transforms ideas into impactful digital experiences </span></q>
                         </div>
                     </div>
                 </div>

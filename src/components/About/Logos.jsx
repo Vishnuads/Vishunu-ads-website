@@ -27,19 +27,21 @@ const Logos = () => {
     ]
 
     return (
-        <>
+        <> <p className='md:max-w-6xl text-2xl  mx-auto px-5'>Our Partners</p>
             <section className='relative md:max-w-6xl mx-auto overflow-hidden'>
+
                 <div className=" w-full absolute z-10 inset-0 bg-linear-to-r  from-[#fffefa] via-transparent to-[#fffefa]"> </div>
-                    <div className=' z-0 my-10'>
-                        <Marquee>
-                            {partners.map((p) => (
-                                <div key={p.id}>
-                                    <img src={p.img} alt={p.name} className='w-24 h-auto' />
-                                </div>
-                            ))}
-                        </Marquee>
-                    </div>
-               
+
+                <div className=' z-0 my-10'>
+                    <Marquee>
+                        {partners.map((p) => (
+                            <div key={p.id}>
+                                <img src={p.img} alt={p.name} className='w-24 h-auto' />
+                            </div>
+                        ))}
+                    </Marquee>
+                </div>
+
             </section>
         </>
     )

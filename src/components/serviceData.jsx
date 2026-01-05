@@ -43,20 +43,20 @@ export const serviceData = {
       <>
         Every successful business starts with a clear idea.
         But turning that idea into a legal business is important.
-        We help you with <span className="font-semibold"> Company Registration & Legal Solutions</span> in India.
+        We help you with <span className="font-semibold"> Company Registration & Legal Solutions </span> in India.
       </>,
       <>
-        Our services include <span className="font-semibold">ROC, GST, and MSME</span> registration.
+        Our services include <span className="font-semibold"> ROC, GST, and MSME </span> registration.
         We make the process simple and stress-free for you.
         Choosing the right business structure becomes easy with us.
       </>,
       <>
-        We also protect your brand with <span className="font-semibold">Trademark and Copyright</span> registration.
+        We also protect your brand with <span className="font-semibold"> Trademark and Copyright </span> registration.
       </>,
       <>
         Your ideas and designs stay safe and legally secured.
         Our experts ensure your business follows all legal rules.
-        Start, grow, and expand your business with <span className="font-semibold">confidence and trust.</span>
+        Start, grow, and expand your business with <span className="font-semibold"> Confidence and trust.</span>
       </>,
     ],
 
@@ -115,20 +115,20 @@ export const serviceData = {
       <>
         Every brand has its own voice.
         We help you discover and shape it clearly.
-        Our <span className="font-semibold">Branding, Design & Content Creation</span> services make your brand memorable.
+        Our <span className="font-semibold"> Branding, Design & Content Creation </span> services make your brand memorable.
       </>,
       <>
-        We create strong <span className="font-semibold">logos and brand identities</span>
+        We create strong <span className="font-semibold"> logos and brand identities </span>
         that reflect your business values.
         Our designs help your brand stand out and stay consistent.
       </>,
       <>
-        We bring your brand to life with <span className="font-semibold">photography, videography, and digital content</span>.
+        We bring your brand to life with <span className="font-semibold"> photography, videography, and digital content </span>.
         Each visual tells your story and connects with your audience.
       </>,
       <>
         Whether launching a new brand or refreshing an old one,
-        we focus on <span className="font-semibold">clarity, creativity, and growth</span>.
+        we focus on <span className="font-semibold"> clarity, creativity, and growth </span>.
         Build trust, engagement, and long-term brand value with us.
       </>,
     ],
@@ -186,22 +186,22 @@ export const serviceData = {
     desc: [
       <>
         Strong technology powers every successful business.
-        We deliver <span className="font-semibold">Digital Technology & Solutions</span>
+        We deliver <span className="font-semibold"> Digital Technology & Solutions </span>
         that help your business work faster and smarter.
       </>,
       <>
-        We build <span className="font-semibold">high-performance websites and custom applications</span>
+        We build <span className="font-semibold"> high-performance websites and custom applications </span>
         that are easy to use and convert visitors into customers.
         Every solution is designed around your business goals.
       </>,
       <>
-        Using <span className="font-semibold">AI, automation, and cloud technologies</span>,
+        Using <span className="font-semibold"> AI, automation, and cloud technologies </span>,
         we help reduce manual work and improve customer engagement.
         Our systems are secure, scalable, and future-ready.
       </>,
       <>
         From new digital launches to system upgrades,
-        we offer <span className="font-semibold">end-to-end technology solutions</span>
+        we offer <span className="font-semibold"> end-to-end technology solutions </span>
         that support growth, innovation, and long-term success.
       </>,
     ],
@@ -260,21 +260,21 @@ export const serviceData = {
     desc: [
       <>
         A strong brand message needs the right visibility.
-        Our <span className="font-semibold">Media Planning & Publicity</span>
+        Our <span className="font-semibold"> Media Planning & Publicity </span>
         services help your brand reach the right audience.
       </>,
       <>
-        We manage <span className="font-semibold">newspapers, magazines, outdoor ads, and digital screens</span>
+        We manage <span className="font-semibold"> newspapers, magazines, outdoor ads, and digital screens </span>
         to place your brand in high-visibility public spaces.
         Your message gets noticed where it matters most.
       </>,
       <>
-        With <span className="font-semibold">smart media planning and targeted buying</span>,
+        With <span className="font-semibold"> mart media planning and targeted buying </span>,
         we maximize reach while optimizing your advertising budget.
         Every campaign is timed for better impact.
       </>,
       <>
-        By combining <span className="font-semibold">traditional and modern media</span>,
+        By combining <span className="font-semibold"> traditional and modern media </span>,
         we build campaigns that increase brand awareness, recall, and trust.
         Keep your brand visible, relevant, and top-of-mind.
       </>,
@@ -334,22 +334,22 @@ export const serviceData = {
     desc: [
       <>
         Every event is a chance to showcase your brand.
-        Our <span className="font-semibold">Event Management & Promotion</span>
+        Our <span className="font-semibold"> Event Management & Promotion </span>
         services help you create memorable experiences.
       </>,
       <>
-        We manage <span className="font-semibold">corporate events, product launches, exhibitions, and trade shows</span>
+        We manage <span className="font-semibold"> corporate events, product launches, exhibitions, and trade shows </span>
         with careful planning and smooth execution.
         Every detail is handled professionally.
       </>,
       <>
-        We create <span className="font-semibold">engaging brand experiences</span>
+        We create <span className="font-semibold"> engaging brand experiences </span>
         that communicate your message clearly.
         Our event promotion helps you connect with the right audience.
       </>,
       <>
         From planning to execution,
-        we deliver <span className="font-semibold">well-organized and impactful events</span>
+        we deliver <span className="font-semibold"> well-organized and impactful events </span>
         that support your business goals and brand growth.
       </>,
     ],
@@ -408,22 +408,22 @@ export const serviceData = {
     desc: [
       <>
         The future of marketing is already here.
-        Our <span className="font-semibold">Emerging Marketing Innovations</span>
+        Our <span className="font-semibold"> Emerging Marketing Innovations </span>
         help brands stay ahead of the competition.
       </>,
       <>
-        We use <span className="font-semibold">immersive technology, gamification, and interactive campaigns</span>
+        We use <span className="font-semibold"> immersive technology, gamification, and interactive campaigns </span>
         to create engaging brand experiences.
         These ideas capture attention and drive participation.
       </>,
       <>
-        We also focus on <span className="font-semibold">sustainable and green marketing</span>
+        We also focus on <span className="font-semibold"> sustainable and green marketing </span>
         that supports responsible brand growth.
         This helps you connect with modern, value-driven audiences.
       </>,
       <>
         From new marketing ideas to future-ready strategies,
-        we deliver <span className="font-semibold">innovation-led solutions</span>
+        we deliver <span className="font-semibold"> innovation-led solutions </span>
         that keep your brand relevant, adaptive, and impactful.
       </>,
     ],
