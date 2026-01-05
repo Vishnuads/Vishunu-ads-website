@@ -15,7 +15,7 @@ const Works = () => {
         </> },
         { img: W2, name: "Life Plus Ayurveda", desc: <>Empowering Ayurveda businesses with branding, marketing, SEO, social, and video.</> },
         { img: W3, name: "GlowbyNJK", desc: <>Comprehensive digital solutions ensuring GlowbyNJK shines in competitive beauty.</> },
-        { img: W4, name: "Skanda Guru Chits", desc: <>Reliable financial brand growth through branding, social, SEO, and promotions.</> }
+        { img: W4, name: "Skandaguru Chits", desc: <>Reliable financial brand growth through branding, social, SEO, and promotions.</> }
     ]
     return (
         <>
@@ -45,7 +45,7 @@ const Works = () => {
                         <div className='h-full w-full my-4' key={idx}>
                             <img src={work.img} alt="works" className=' object-cover grayscale-0' />
                             <h1 className='text-2xl my-4 font-light'>{work.name}</h1>
-                            <p className='text-md  font-extralight'>{work.desc}</p>
+                            <p className='text-lg  font-extralight'>{work.desc}</p>
                             {/* <Button name="Learn More" /> */}
                         </div>
                     ))}
