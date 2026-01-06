@@ -36,7 +36,7 @@ const Test = () => {
 
     return (
         <>
-            <section ref={ref} className='test  mb-20 relative  min-h-[240vh] md:min-h-[210vh] lg:min-h-[250vh] '>
+            <section ref={ref} className='test  mb-20 relative  min-h-[240vh] md:min-h-[210vh] lg:h-[250vh] '>
                 <div className='absolute inset-0  bg-linear-to-b from-black/90 via-black/10 to-black/10'></div>
                 <div className=' text-white  absolute inset-0 '>
                     <div className="text-center  py-10">
@@ -58,7 +58,7 @@ const Test = () => {
                                 return (
                                     <motion.div
                                         key={t.id}
-                                        className={` md:w-100 w-80  sticky bottom-24 bg-black/10 backdrop-blur-xl rounded-xl p-4 `}
+                                        className={` md:w-100 w-80 h-fit sticky bottom-24 bg-black/10 backdrop-blur-xl rounded-xl p-4 `}
                                         style={{
                                             y,
                                             scale,

@@ -53,8 +53,8 @@ const Insights = () => {
                     </div>
                     <div className="grid md:grid-cols-3  grid-cols-1 gap-6">
                         {posts.map((p) => (
-                            <Link to={`/blog${p.link}`}>
-                                <div key={p.id} className=''>
+                            <Link to={`/blog${p.link}`} key={p.id}>
+                                <div  className=''>
                                     <img src={p.img} alt="blog imgs" className='mb-2 object-cover h-80 w-full' />
                                     <p className='text-gray-500 text-sm'>{p.date}</p>
                                     <h1 className='font-semibold  my-2 '>{p.title}</h1>
